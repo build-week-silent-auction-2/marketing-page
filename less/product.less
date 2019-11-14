@@ -7,7 +7,7 @@
     width: 100vw;
     height:100%;
     display: flex;
-   
+   background:@rgba-complement-2;
     flex-wrap:wrap;
     justify-content:center;
     
@@ -27,11 +27,13 @@
             padding:0;
             transition:all .25s ease-in-out;
             background:@btn-color;
+            
           }
           .h-button:hover{
             transition:all .25s ease-in-out;
             transform:scale(1.05);
             border:4px ridge white;
+            box-shadow: inset antiquewhite 2px 2px 20px 2px;
           }
          
         
@@ -47,44 +49,57 @@
         justify-content: flex-start;
         background-size:contain;
         align-self:center;
-      
+        .line-1:before{  
+            content: ' ';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom:0;
+            right:0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0.6;
+            background-image:url('../images/doc.png');
+           
+            background-position: 50% 0;
+            background-size:cover;
+        }
         .line-1{
             margin-top:5vh;
             display: grid;
             position: relative;
-            box-shadow:3px 2px 2px 2px @rgba-primary-4, -3px -2px 2px 2px @rgba-primary-3;
+            box-shadow:3px 2px 2px 2px black, -3px -2px 2px -2px @rgba-primary-3;
             grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr;
             align-content: stretch;
-            grid-gap:3px;
-        
-            background-repeat: no-repeat;
-            background-size:cover;
-         
+            grid-gap:25px;
+          
+           
             overflow-x:scroll;
+            background-size:800px 400px;
+           
         .panels {
-          margin:5%;
            min-width:15vw;
             height:25vh;
-            // margin:5px;
+            margin:15px;
             border-radius:12px;
             border:4px ridge @rgba-primary-2;
             background:@panel-color;
-            transition:all .25s ease-in-out;
+            transition:all .35s ease-in-out;
             background-size:contain;
             background-repeat:no-repeat;
             background:url(../images/br.png);
         }
         .panels:hover{
-            margin-left:10%;
-            min-width:13vw;
             min-height:22vh;
-            transition:all .25s ease-in-out;
-            transform:scale(1.15);
+            transition:all .15s ease-in-out;
+            transform:scale(1.11);
             border:4px ridge white;
         }
     }
-
+   
         
     }
 
@@ -98,4 +113,5 @@
         background:@rgba-primary-2;;
     }
 }
+
 
