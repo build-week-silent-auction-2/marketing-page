@@ -65,16 +65,43 @@
             background-size:800px 400px;
            
         .panels {
-           min-width:15vw;
+           width:15vw;
             height:25vh;
             margin:15px;
             border-radius:12px;
             border:4px ridge @rgba-primary-2;
+            padding:0;
             background:@panel-color;
             transition:all .35s ease-in-out;
             background-size:ccover;
             background-repeat:no-repeat;
-            background:url(../images/gavel.png);
+            background:url(../images/gavelSmall.png);
+
+            img{
+                left:0;
+                position:relative;
+                min-width:15vw;
+                min-height:19vh;
+            }
+
+           .bid{
+               display:flex;
+                position:relative;
+                width:100%;
+                height:5vh;
+                background:@rgba-complement-4;
+                bottom:0;
+                padding:.5% 0 .5% 0;
+                justify-content:space-around;
+
+
+
+                button{
+                    padding:0;
+                    margin:0 0px;
+                    width:5vw;
+                }
+            }
         }
         .panels:hover{
             min-height:22vh;
@@ -99,4 +126,14 @@
     }
 }
 
-
+.details{
+    display:none;
+    position:absolute;
+    background:white;
+    border:5px ridge black;
+    width:40vw;
+    height:40vh;
+    left:35%;
+    top:10%;
+    z-index:100;
+}
