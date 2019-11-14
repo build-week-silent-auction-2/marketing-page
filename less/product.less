@@ -49,23 +49,7 @@
         justify-content: flex-start;
         background-size:contain;
         align-self:center;
-        .line-1:before{  
-            content: ' ';
-            display: block;
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom:0;
-            right:0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            opacity: 0.6;
-            background-image:url('../images/doc.png');
-           
-            background-position: 50% 0;
-            background-size:cover;
-        }
+      
         .line-1{
             margin-top:5vh;
             display: grid;
@@ -88,9 +72,9 @@
             border:4px ridge @rgba-primary-2;
             background:@panel-color;
             transition:all .35s ease-in-out;
-            background-size:contain;
+            background-size:ccover;
             background-repeat:no-repeat;
-            background:url(../images/br.png);
+            background:url(../images/gavel.png);
         }
         .panels:hover{
             min-height:22vh;
@@ -98,6 +82,7 @@
             transform:scale(1.11);
             border:4px ridge white;
         }
+     
     }
    
         
