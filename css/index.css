@@ -3,7 +3,7 @@
 .judson-serif {
   font-family: 'Judson', serif;
   color: black;
-  text-shadow: 0.25px 0.25px 0px white, -0.25px 0px 0.5px white;
+  text-shadow: 2px 1px 2px black;
 }
 .mon-serif {
   font-family: 'Montserrat', sans-serif;
@@ -183,9 +183,6 @@ html {
 a {
   text-decoration: none;
 }
-* {
-  overflow: hidden;
-}
 body {
   scrollbar-color: rebeccapurple green;
   scrollbar-width: thin;
@@ -194,27 +191,12 @@ body {
   height: auto;
   width: 100vw;
   background: url('https://cdn.discordapp.com/attachments/644333219512188928/644357514607067156/auction-image.png');
+  overflow: hidden;
 }
 button {
   padding: 5px;
   text-shadow: 2px 1px 2px black;
   font-size: 1.3rem;
-}
-::-webkit-scrollbar-track {
-  border-radius: 10px;
-  background-color: #e3c6d2;
-}
-::-webkit-scrollbar {
-  height: 20px;
-}
-::-webkit-scrollbar-thumb {
-  border: 7px ridge #768498;
-  width: 25px;
-  border-radius: 10px;
-}
-::-webkit-scrollbar-track-piece {
-  background: rgba(114, 100, 106, 0.68);
-  padding: 10px;
 }
 * {
   box-sizing: border-box;
@@ -287,6 +269,7 @@ button {
   background: rgba(87, 82, 84, 0.59);
   flex-wrap: wrap;
   justify-content: center;
+  overflow: none;
 }
 .main .container-h {
   display: flex;
@@ -429,7 +412,7 @@ button {
 .main .main-content .line-1 .panels .bid .amt {
   font-family: 'Judson', serif;
   color: black;
-  text-shadow: 0.25px 0.25px 0px white, -0.25px 0px 0.5px white;
+  text-shadow: 2px 1px 2px black;
   font-size: 1.9rem;
 }
 .main .main-content .line-1 .panels .bid button {
@@ -500,6 +483,22 @@ button {
     margin-left: 30%;
   }
 }
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #e3c6d2;
+}
+::-webkit-scrollbar {
+  height: 20px;
+}
+::-webkit-scrollbar-thumb {
+  border: 7px ridge #768498;
+  width: 25px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track-piece {
+  background: rgba(114, 100, 106, 0.68);
+  padding: 10px;
+}
 * {
   box-sizing: border-box;
 }
@@ -552,7 +551,10 @@ html {
   transition: all 0.5s ease-in-out;
   border: 4px ridge white;
 }
-.but {
+body {
+  overflow-y: scroll;
+}
+body .but {
   height: 10vh;
   border-radius: 1px;
   width: 10vw;
@@ -565,43 +567,31 @@ html {
   font-size: 1.9rem;
 }
 @media (max-width: 500px) {
-  .but {
+  body .but {
     width: 100vw;
     height: 6vh;
   }
 }
-.divTable {
+body .divTable {
   margin-top: 50px;
   margin-left: 50px;
   display: table;
-  width: 100%;
+  width: 80%;
   top: 240px;
+  font-family: 'Judson', serif;
+  color: black;
+  text-shadow: 2px 1px 2px black;
+  font-size: 2.1rem;
   background: rgba(65, 75, 195, 0.5);
+  margin-bottom: 50px;
 }
-.divTableRow {
+body .divTableRow {
   display: table-row;
   height: 7vh;
 }
-.divTableHeading {
-  background: #EEE;
-  display: table-header-group;
-}
-.divTableCell,
-.divTableHead {
-  border: 1px solid #000000;
-  display: table-cell;
-  padding: 3px 10px;
-}
-.divTableHeading {
-  background-color: #EEE;
-  display: table-header-group;
-  font-weight: bold;
-}
-.divTableFoot {
-  background-color: #EEE;
-  display: table-footer-group;
-  font-weight: bold;
-}
-.divTableBody {
-  display: table-row-group;
+body td,
+body th {
+  text-align: center;
+  border: 5px solid rgba(0, 0, 0, 0.25);
+  padding: 1.5rem;
 }

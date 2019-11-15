@@ -1,5 +1,7 @@
 @import "product";
 @import "var";
+body{
+   overflow-y:scroll;
 
 .but{
     height:10vh;
@@ -22,34 +24,22 @@
     margin-top:50px;
     margin-left:50px;
    display: table;
-   width: 100%;
+   width: 80%;
    top:240px;
+   .judson-serif;
+   font-size: @textSize-ll;
    background:rgba(65,75,195,.5);
+   margin-bottom:50px;
 }
 .divTableRow {
    display: table-row;
    height:7vh;
 } 
-.divTableHeading {
-   background: #EEE;
-   display: table-header-group;
+td, th {
+   text-align: center;
+   border: 5px solid rgba(0,0,0,.25);
+   padding: 1.5rem;
+ }
 }
-.divTableCell, .divTableHead {
-   border: 1px solid #000000;
-   display: table-cell;
-   padding: 3px 10px;
-}
-.divTableHeading {
-   background-color: #EEE;
-   display: table-header-group;
-   font-weight: bold;
-}
-.divTableFoot {
-   background-color: #EEE;
-   display: table-footer-group;
-   font-weight: bold;
-}
-.divTableBody {
-   display: table-row-group;
-}
-   
+
+

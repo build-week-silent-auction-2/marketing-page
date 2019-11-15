@@ -3,7 +3,7 @@
 .judson-serif {
   font-family: 'Judson', serif;
   color: black;
-  text-shadow: 0.25px 0.25px 0px white, -0.25px 0px 0.5px white;
+  text-shadow: 2px 1px 2px black;
 }
 .mon-serif {
   font-family: 'Montserrat', sans-serif;
@@ -49,9 +49,6 @@ h1, h2, h3, h4, h5, h6 {
  font-weight: 900;
 }
 **/
-* {
-  overflow: hidden;
-}
 body {
   scrollbar-color: rebeccapurple green;
   scrollbar-width: thin;
@@ -60,25 +57,10 @@ body {
   height: auto;
   width: 100vw;
   background: url('https://cdn.discordapp.com/attachments/644333219512188928/644357514607067156/auction-image.png');
+  overflow: hidden;
 }
 button {
   padding: 5px;
   text-shadow: 2px 1px 2px black;
   font-size: 1.3rem;
-}
-::-webkit-scrollbar-track {
-  border-radius: 10px;
-  background-color: #e3c6d2;
-}
-::-webkit-scrollbar {
-  height: 20px;
-}
-::-webkit-scrollbar-thumb {
-  border: 7px ridge #768498;
-  width: 25px;
-  border-radius: 10px;
-}
-::-webkit-scrollbar-track-piece {
-  background: rgba(114, 100, 106, 0.68);
-  padding: 10px;
 }

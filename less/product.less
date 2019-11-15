@@ -1,6 +1,7 @@
 @import "var";
 
 
+
 .main {
     
     position: absolute;
@@ -10,6 +11,7 @@
    background:@rgba-complement-2;
     flex-wrap:wrap;
     justify-content:center;
+    overflow:none;
     
 
     .container-h {
@@ -235,4 +237,28 @@
    }
 }
 
+
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: @rgba-complement-1;
+
+
+
+}
+
+::-webkit-scrollbar {
+	height: 20px;
+
+} 
+
+::-webkit-scrollbar-thumb {
+	border:7px ridge @rgba-primary-2;
+	width:25px;
+	border-radius: 10px;	
+}
+
+::-webkit-scrollbar-track-piece{
+	background: @rgba-complement-4;
+	padding:10px;
+}
 
