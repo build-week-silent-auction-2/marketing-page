@@ -6,7 +6,7 @@ let amount= $('.amt');
 let det = $('.details');
 let imgArr =[];
 
-amount.attr('value','$');
+amount.attr('value','$0.00');
 
 
 item.on('click',function(){

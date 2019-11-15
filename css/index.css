@@ -268,10 +268,18 @@ button {
 }
 .main .container-h {
   display: flex;
-  width: 100%;
+  width: 100vw;
   justify-content: space-around;
   height: 12vh;
   padding: 5px;
+}
+@media (max-width: 500px) {
+  .main .container-h {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    width: 100vw;
+  }
 }
 .main .container-h .h-button {
   height: 10vh;
@@ -285,7 +293,13 @@ button {
   color: #a4adba;
   font-size: 1.9rem;
 }
-.main .container-h .h-button:hover {
+@media (max-width: 500px) {
+  .main .container-h .h-button {
+    width: 100vw;
+    height: 6vh;
+  }
+}
+.main .container-h .button:hover {
   transition: all 0.25s ease-in-out;
   transform: scale(1.05);
   border: 4px ridge white;
@@ -301,6 +315,12 @@ button {
   background-size: contain;
   align-self: center;
 }
+@media (max-width: 500px) {
+  .main .main-content {
+    display: flex;
+    padding: 15px;
+  }
+}
 .main .main-content .line-1 {
   margin-top: 5vh;
   display: grid;
@@ -313,6 +333,16 @@ button {
   overflow-x: scroll;
   background-size: 800px 400px;
 }
+@media (max-width: 500px) {
+  .main .main-content .line-1 {
+    padding-top: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow-y: scroll;
+  }
+}
 .main .main-content .line-1 .panels {
   width: 15vw;
   height: 25vh;
@@ -322,15 +352,31 @@ button {
   padding: 0;
   background: rgba(114, 100, 106, 0.68);
   transition: all 0.35s ease-in-out;
-  background-size: ccover;
+  background-size: cover;
   background-repeat: no-repeat;
   background: url(../images/gavelSmall.png);
+}
+@media (max-width: 500px) {
+  .main .main-content .line-1 .panels {
+    width: 60vw;
+    min-height: 50vh;
+    max-height: 50vh;
+    margin: 10px;
+  }
 }
 .main .main-content .line-1 .panels img {
   left: 0;
   position: relative;
   min-width: 15vw;
   min-height: 19vh;
+}
+@media (max-width: 500px) {
+  .main .main-content .line-1 .panels img {
+    margin-top: 20px;
+    min-height: 40vh;
+    height: 40vh;
+    max-height: 40vh;
+  }
 }
 .main .main-content .line-1 .panels .bid {
   display: flex;
@@ -364,6 +410,15 @@ button {
   transform: scale(1.11);
   border: 4px ridge white;
 }
+@media (max-width: 500px) {
+  .main .main-content .line-1 .panels:hover {
+    width: 60vw;
+    min-height: 50vh;
+    max-height: 50vh;
+    margin: 10px;
+    transform: scale(1.01);
+  }
+}
 .main .footer {
   position: relative;
   margin: 5%;
@@ -381,4 +436,16 @@ button {
   left: 35%;
   top: 10%;
   z-index: 100;
+}
+#featured {
+  position: absolute;
+  margin-top: 10vh;
+  width: 50vw;
+  text-align: center;
+  padding: 10px;
+  background: transparent;
+}
+#featured #featured:hover {
+  background: transparent;
+  box-shadow: none;
 }
