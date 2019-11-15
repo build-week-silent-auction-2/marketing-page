@@ -21,7 +21,7 @@
 @mobile: ~"(max-width: 500px)";
 
 @text-shadow:2px 1px 2px black;
-@text-shadow-l:.5px .25px .5px @rgba-primary-4, -.5px -.25px .5px @rgba-complement-1;
+@text-shadow-l:.25px .25px 0px white, -.25px 0px .5px white;
 @box-shadow:2px 1px 1px 2px black, -2px -1px 1px -2px gray;
 @bg: rgba(164,173,186,1);
 @large-txt: rgb(30, 39, 172);
@@ -32,6 +32,7 @@
 
 @textSize-s:1.3rem;
 @textSize-l:1.9rem;
+@textSize-ll:2.1rem;
 @textSize-xl:2.3rem;
 
 
@@ -43,7 +44,7 @@
 .mon-serif{
     font-family: 'Montserrat', sans-serif;
     color:black;
-    text-shadow: @text-shadow-l;
+    // text-shadow: @text-shadow-l;
 }
 
 .archivo(@color:0){

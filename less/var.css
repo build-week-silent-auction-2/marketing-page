@@ -3,12 +3,11 @@
 .judson-serif {
   font-family: 'Judson', serif;
   color: black;
-  text-shadow: 0.5px 0.25px 0.5px #253956, -0.5px -0.25px 0.5px #e3c6d2;
+  text-shadow: 0.25px 0.25px 0px white, -0.25px 0px 0.5px white;
 }
 .mon-serif {
   font-family: 'Montserrat', sans-serif;
   color: black;
-  text-shadow: 0.5px 0.25px 0.5px #253956, -0.5px -0.25px 0.5px #e3c6d2;
 }
 /**body {
  font-family: 'Quicksand', sans-serif;
