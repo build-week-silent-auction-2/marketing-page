@@ -1,5 +1,55 @@
 /* Main Primary color */
 /* Main Complement color */
+.judson-serif {
+  font-family: 'Judson', serif;
+  color: black;
+  text-shadow: 0.5px 0.25px 0.5px #253956, -0.5px -0.25px 0.5px #e3c6d2;
+}
+.mon-serif {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  text-shadow: 0.5px 0.25px 0.5px #253956, -0.5px -0.25px 0.5px #e3c6d2;
+}
+/**body {
+ font-family: 'Quicksand', sans-serif;
+ font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-weight: 500;
+}
+**/
+/**
+body {
+ font-family: 'Judson', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Archivo Black', sans-serif;
+}
+**/
+/**
+body {
+ font-family: 'Roboto', sans-serif;
+ font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Abril Fatface', serif;
+}
+modern curvy
+**/
+/**
+body {
+ font-family: 'Work Sans', sans-serif;
+ font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Montserrat', sans-serif;
+ font-weight: 900;
+}
+**/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -144,7 +194,7 @@ body {
   background: url('https://cdn.discordapp.com/attachments/644333219512188928/644357514607067156/auction-image.png');
 }
 button {
-  text-shadow: 2px 1px 2px rgba(114, 100, 106, 0.68);
+  text-shadow: 2px 1px 2px black;
   font-size: 1.3rem;
 }
 ::-webkit-scrollbar-track {
@@ -231,6 +281,9 @@ button {
   padding: 0;
   transition: all 0.25s ease-in-out;
   background: rgba(87, 82, 84, 0.79);
+  font-family: 'Archivo Black', sans-serif;
+  color: #a4adba;
+  font-size: 1.9rem;
 }
 .main .container-h .h-button:hover {
   transition: all 0.25s ease-in-out;
@@ -288,11 +341,22 @@ button {
   bottom: 0;
   padding: 0.5% 0 0.5% 0;
   justify-content: space-around;
+  font-size: 1.9rem;
+}
+.main .main-content .line-1 .panels .bid .amt {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  text-shadow: 0.5px 0.25px 0.5px #253956, -0.5px -0.25px 0.5px #e3c6d2;
+  font-size: 1.9rem;
 }
 .main .main-content .line-1 .panels .bid button {
   padding: 0;
   margin: 0 0px;
   width: 5vw;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  text-shadow: 0.5px 0.25px 0.5px #253956, -0.5px -0.25px 0.5px #e3c6d2;
+  font-size: 1.3rem;
 }
 .main .main-content .line-1 .panels:hover {
   min-height: 22vh;

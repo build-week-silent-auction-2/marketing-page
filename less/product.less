@@ -27,6 +27,8 @@
             padding:0;
             transition:all .25s ease-in-out;
             background:@btn-color;
+            .archivo(@rgba-primary-1); 
+                    font-size: @textSize-l;
             
           }
           .h-button:hover{
@@ -81,7 +83,7 @@
                 left:0;
                 position:relative;
                 min-width:15vw;
-                min-height:19vh;
+                min-height:19vh; 
             }
 
            .bid{
@@ -93,13 +95,19 @@
                 bottom:0;
                 padding:.5% 0 .5% 0;
                 justify-content:space-around;
-
-
+                font-size: 1.9rem;
+                // .mon-serif; 
+                .amt{
+                    .mon-serif; 
+                    font-size: @textSize-l;
+                }
 
                 button{
                     padding:0;
                     margin:0 0px;
                     width:5vw;
+                    .mon-serif; 
+                    font-size: @textSize-s;
                 }
             }
         }
