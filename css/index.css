@@ -279,7 +279,11 @@ button {
   width: 100vw;
   height: 100%;
   display: flex;
+<<<<<<< HEAD
   background: rgba(87, 82, 84, 0.59);
+=======
+  background: rgba(87, 82, 84, 0.79);
+>>>>>>> 78d9794df6b26a30f12697af0718a89b074799f8
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -305,6 +309,7 @@ button {
   padding: 5px;
   padding: 0;
   transition: all 0.25s ease-in-out;
+<<<<<<< HEAD
   background: rgba(87, 82, 84, 0.59);
   font-family: 'Archivo Black', sans-serif;
   color: #a4adba;
@@ -316,6 +321,19 @@ button {
     height: 6vh;
   }
 }
+=======
+  background: rgba(87, 82, 84, 0.79);
+  font-family: 'Archivo Black', sans-serif;
+  color: #a4adba;
+  font-size: 1.9rem;
+}
+@media (max-width: 500px) {
+  .main .container-h .h-button {
+    width: 100vw;
+    height: 6vh;
+  }
+}
+>>>>>>> 78d9794df6b26a30f12697af0718a89b074799f8
 .main .container-h .button:hover {
   transition: all 0.25s ease-in-out;
   transform: scale(1.05);
@@ -352,7 +370,11 @@ button {
 }
 @media (max-width: 500px) {
   .main .main-content .line-1 {
+<<<<<<< HEAD
     padding-top: 150px;
+=======
+    padding-top: 10px;
+>>>>>>> 78d9794df6b26a30f12697af0718a89b074799f8
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -395,10 +417,13 @@ button {
     max-height: 40vh;
   }
 }
+<<<<<<< HEAD
 .main .main-content .line-1 .panels .items {
   max-width: 100%;
   max-height: 80%;
 }
+=======
+>>>>>>> 78d9794df6b26a30f12697af0718a89b074799f8
 .main .main-content .line-1 .panels .bid {
   display: flex;
   position: relative;
@@ -452,12 +477,18 @@ button {
   position: absolute;
   background: white;
   border: 5px ridge black;
+<<<<<<< HEAD
   width: 60vw;
   height: 80vh;
+=======
+  width: 40vw;
+  height: 40vh;
+>>>>>>> 78d9794df6b26a30f12697af0718a89b074799f8
   left: 35%;
   top: 10%;
   z-index: 100;
 }
+<<<<<<< HEAD
 @media (max-width: 500px) {
   .details {
     left: 0;
@@ -590,4 +621,17 @@ html {
 }
 .divTableBody {
   display: table-row-group;
+=======
+#featured {
+  position: absolute;
+  margin-top: 10vh;
+  width: 50vw;
+  text-align: center;
+  padding: 10px;
+  background: transparent;
+}
+#featured #featured:hover {
+  background: transparent;
+  box-shadow: none;
+>>>>>>> 78d9794df6b26a30f12697af0718a89b074799f8
 }
