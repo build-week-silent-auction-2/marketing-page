@@ -4,3 +4,7 @@
   transition: all 5s ease-in-out;
   flex-basis: fit-content;
 }
+#featured {
+  top: 10vw;
+  width: 50vw;
+}
