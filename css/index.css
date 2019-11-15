@@ -201,18 +201,20 @@ button {
   font-size: 1.3rem;
 }
 ::-webkit-scrollbar-track {
-  box-shadow: inset 5px 0 6px rgba(0, 0, 0, 0.9);
   border-radius: 10px;
-  background-color: #444444;
+  background-color: #e3c6d2;
 }
 ::-webkit-scrollbar {
-  width: 12px;
-  background-color: #F5F5F5;
+  height: 20px;
 }
 ::-webkit-scrollbar-thumb {
+  border: 7px ridge #768498;
+  width: 25px;
   border-radius: 10px;
-  background-color: #768498;
-  background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.7) 50%, transparent, transparent);
+}
+::-webkit-scrollbar-track-piece {
+  background: rgba(114, 100, 106, 0.68);
+  padding: 10px;
 }
 * {
   box-sizing: border-box;
@@ -355,13 +357,14 @@ button {
   margin-top: 5vh;
   display: grid;
   position: relative;
-  box-shadow: 3px 2px 2px 2px black, -3px -2px 2px -2px rgba(59, 78, 107, 0.5);
+  box-shadow: outset 3px 2px 2px 2px black, -3px -2px 2px -2px rgba(59, 78, 107, 0.5);
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   align-content: stretch;
   grid-gap: 25px;
   overflow-x: scroll;
   background-size: 800px 400px;
+  background: #253956;
 }
 @media (max-width: 500px) {
   .main .main-content .line-1 {
@@ -440,8 +443,8 @@ button {
 .main .main-content .line-1 .panels:hover {
   min-height: 22vh;
   transition: all 0.15s ease-in-out;
-  transform: scale(1.11);
   border: 4px ridge white;
+  box-shadow: #e3c6d2 0px 0px 20px 0px;
 }
 @media (max-width: 500px) {
   .main .main-content .line-1 .panels:hover {

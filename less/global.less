@@ -28,24 +28,27 @@ button {
 }
 
 ::-webkit-scrollbar-track {
-	box-shadow: inset 5px 0 6px rgba(0, 0, 0, 0.9);
 	border-radius: 10px;
-	background-color: #444444;
+	background-color: @rgba-complement-1;
+
+
+
 }
 
 ::-webkit-scrollbar {
-	width: 12px;
-	background-color: #F5F5F5;
-}
+	height: 20px;
+
+} 
 
 ::-webkit-scrollbar-thumb {
-	border-radius: 10px;
-	background-color: @rgba-primary-2;
-	background-image: -webkit-linear-gradient(90deg,
-			transparent,
-			rgba(0, 0, 0, 0.7) 50%,
-			transparent,
-			transparent)
+	border:7px ridge @rgba-primary-2;
+	width:25px;
+	border-radius: 10px;	
+}
+
+::-webkit-scrollbar-track-piece{
+	background: @rgba-complement-4;
+	padding:10px;
 }
 
 // ::-webkit-scrollbar-track
