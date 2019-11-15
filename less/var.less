@@ -1,0 +1,100 @@
+// Color assignments 
+
+
+@rgba-primary-0: rgba( 84,102,127,1);	/* Main Primary color */
+@rgba-primary-1: rgba(164,173,186,1);
+@rgba-primary-2: rgba(118,132,152,1);
+@rgba-primary-3: rgba( 59, 78,107,.5);
+@rgba-primary-4: rgba( 37, 57, 86,1);
+
+@rgba-complement-0: rgba(167,105,129,1);	/* Main Complement color */
+@rgba-complement-1: rgba(227,198,210,1);
+@rgba-complement-2: rgba(87, 82, 84, 0.59);
+@rgba-complement-3: rgba(140, 71, 98,1);
+@rgba-complement-4: rgba(114, 100, 106, 0.68);
+
+
+
+@bg-main:@rgba-primary-4;
+@btn-color:@rgba-complement-2;
+@panel-color:@rgba-complement-4;
+@mobile: ~"(max-width: 500px)";
+
+@text-shadow:2px 1px 2px black;
+@text-shadow-l:.5px .25px .5px @rgba-primary-4, -.5px -.25px .5px @rgba-complement-1;
+@box-shadow:2px 1px 1px 2px black, -2px -1px 1px -2px gray;
+@bg: rgba(164,173,186,1);
+@large-txt: rgb(30, 39, 172);
+
+
+
+@phone: ~'(max-width: 500px)';
+
+@textSize-s:1.3rem;
+@textSize-l:1.9rem;
+@textSize-xl:2.3rem;
+
+
+.judson-serif{
+    font-family: 'Judson', serif;
+    color:black;
+    text-shadow: @text-shadow-l;
+}
+.mon-serif{
+    font-family: 'Montserrat', sans-serif;
+    color:black;
+    text-shadow: @text-shadow-l;
+}
+
+.archivo(@color:0){
+    font-family: 'Archivo Black', sans-serif;
+   color:@color;
+}
+
+@mobile: ~"(max-width: 500px)";
+
+/**body {
+ font-family: 'Quicksand', sans-serif;
+ font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-weight: 500;
+}
+**/
+
+/**
+body {
+ font-family: 'Judson', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Archivo Black', sans-serif;
+}
+**/
+
+/**
+body {
+ font-family: 'Roboto', sans-serif;
+ font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Abril Fatface', serif;
+}
+modern curvy
+**/
+
+
+/**
+body {
+ font-family: 'Work Sans', sans-serif;
+ font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Montserrat', sans-serif;
+ font-weight: 900;
+}
+**/
+

@@ -1,0 +1,593 @@
+/* Main Primary color */
+/* Main Complement color */
+.judson-serif {
+  font-family: 'Judson', serif;
+  color: black;
+  text-shadow: 0.5px 0.25px 0.5px #253956, -0.5px -0.25px 0.5px #e3c6d2;
+}
+.mon-serif {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  text-shadow: 0.5px 0.25px 0.5px #253956, -0.5px -0.25px 0.5px #e3c6d2;
+}
+/**body {
+ font-family: 'Quicksand', sans-serif;
+ font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-weight: 500;
+}
+**/
+/**
+body {
+ font-family: 'Judson', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Archivo Black', sans-serif;
+}
+**/
+/**
+body {
+ font-family: 'Roboto', sans-serif;
+ font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Abril Fatface', serif;
+}
+modern curvy
+**/
+/**
+body {
+ font-family: 'Work Sans', sans-serif;
+ font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Montserrat', sans-serif;
+ font-weight: 900;
+}
+**/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  font-size: 62.5%;
+}
+* {
+  overflow: hidden;
+}
+body {
+  scrollbar-color: rebeccapurple green;
+  scrollbar-width: thin;
+  position: absolue;
+  display: block;
+  height: auto;
+  width: 100vw;
+  background: url('https://cdn.discordapp.com/attachments/644333219512188928/644357514607067156/auction-image.png');
+}
+button {
+  text-shadow: 2px 1px 2px black;
+  font-size: 1.3rem;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 5px 0 6px rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  background-color: #444444;
+}
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #D62929;
+  background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.7) 50%, transparent, transparent);
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://cdn.discordapp.com/attachments/644333219512188928/644357514607067156/auction-image.png");
+}
+.container h1 {
+  display: flex;
+  font-size: 9rem;
+  justify-content: center;
+  padding-bottom: 10vh;
+  font-weight: bold;
+  color: #1e27ac;
+}
+@media (max-width: 500px) {
+  .container h1 {
+    font-size: 5rem;
+  }
+}
+.container nav {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .container nav {
+    flex-direction: column;
+  }
+}
+.container nav a {
+  display: flex;
+  margin: 2%;
+  width: 22vw;
+  height: 20vh;
+  text-decoration: none;
+  justify-content: space-evenly;
+  font-size: 3rem;
+  background-color: rgba(255, 255, 255, 0.45);
+  align-items: center;
+  color: black;
+  border: 1px solid black;
+  transition: all 0.75s ease-in-out;
+}
+@media (max-width: 500px) {
+  .container nav a {
+    font-size: 3rem;
+    margin: auto;
+    width: 95vw;
+  }
+}
+.container nav a:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: whitesmoke;
+  opacity: 1;
+  transform: scale(1.09);
+  transition: all 0.5s ease-in-out;
+  border: 4px ridge white;
+}
+.main {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  background: rgba(87, 82, 84, 0.59);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main .container-h {
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  height: 12vh;
+  padding: 5px;
+}
+@media (max-width: 500px) {
+  .main .container-h {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    width: 100vw;
+  }
+}
+.main .container-h .h-button {
+  height: 10vh;
+  border-radius: 1px;
+  width: 10vw;
+  padding: 5px;
+  padding: 0;
+  transition: all 0.25s ease-in-out;
+  background: rgba(87, 82, 84, 0.59);
+  font-family: 'Archivo Black', sans-serif;
+  color: #a4adba;
+  font-size: 1.9rem;
+}
+@media (max-width: 500px) {
+  .main .container-h .h-button {
+    width: 100vw;
+    height: 6vh;
+  }
+}
+.main .container-h .button:hover {
+  transition: all 0.25s ease-in-out;
+  transform: scale(1.05);
+  border: 4px ridge white;
+  box-shadow: inset antiquewhite 2px 2px 20px 2px;
+}
+.main .main-content {
+  width: 80vw;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+  justify-content: flex-start;
+  background-size: contain;
+  align-self: center;
+}
+@media (max-width: 500px) {
+  .main .main-content {
+    display: flex;
+    padding: 15px;
+  }
+}
+.main .main-content .line-1 {
+  margin-top: 5vh;
+  display: grid;
+  position: relative;
+  box-shadow: 3px 2px 2px 2px black, -3px -2px 2px -2px rgba(59, 78, 107, 0.5);
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-content: stretch;
+  grid-gap: 25px;
+  overflow-x: scroll;
+  background-size: 800px 400px;
+}
+@media (max-width: 500px) {
+  .main .main-content .line-1 {
+    padding-top: 150px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow-y: scroll;
+  }
+}
+.main .main-content .line-1 .panels {
+  width: 15vw;
+  height: 25vh;
+  margin: 15px;
+  border-radius: 12px;
+  border: 4px ridge #768498;
+  padding: 0;
+  background: rgba(114, 100, 106, 0.68);
+  transition: all 0.35s ease-in-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: url(../images/gavelSmall.png);
+}
+@media (max-width: 500px) {
+  .main .main-content .line-1 .panels {
+    width: 60vw;
+    min-height: 50vh;
+    max-height: 50vh;
+    margin: 10px;
+  }
+}
+.main .main-content .line-1 .panels img {
+  left: 0;
+  position: relative;
+  min-width: 15vw;
+  min-height: 19vh;
+}
+@media (max-width: 500px) {
+  .main .main-content .line-1 .panels img {
+    margin-top: 20px;
+    min-height: 40vh;
+    height: 40vh;
+    max-height: 40vh;
+  }
+}
+.main .main-content .line-1 .panels .items {
+  max-width: 100%;
+  max-height: 80%;
+}
+.main .main-content .line-1 .panels .bid {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 5vh;
+  background: rgba(114, 100, 106, 0.68);
+  bottom: 0;
+  padding: 0.5% 0 0.5% 0;
+  justify-content: space-around;
+  font-size: 1.9rem;
+}
+.main .main-content .line-1 .panels .bid .amt {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  text-shadow: 0.5px 0.25px 0.5px #253956, -0.5px -0.25px 0.5px #e3c6d2;
+  font-size: 1.9rem;
+}
+.main .main-content .line-1 .panels .bid button {
+  padding: 0;
+  margin: 0 0px;
+  width: 5vw;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  text-shadow: 0.5px 0.25px 0.5px #253956, -0.5px -0.25px 0.5px #e3c6d2;
+  font-size: 1.3rem;
+}
+.main .main-content .line-1 .panels:hover {
+  min-height: 22vh;
+  transition: all 0.15s ease-in-out;
+  transform: scale(1.11);
+  border: 4px ridge white;
+}
+@media (max-width: 500px) {
+  .main .main-content .line-1 .panels:hover {
+    width: 60vw;
+    min-height: 50vh;
+    max-height: 50vh;
+    margin: 10px;
+    transform: scale(1.01);
+  }
+}
+.main .footer {
+  position: relative;
+  margin: 5%;
+  width: 100%;
+  height: 5vh;
+  background: #768498;
+}
+.details {
+  display: none;
+  position: absolute;
+  background: white;
+  border: 5px ridge black;
+  width: 60vw;
+  height: 80vh;
+  left: 35%;
+  top: 10%;
+  z-index: 100;
+}
+@media (max-width: 500px) {
+  .details {
+    left: 0;
+    width: 100vw;
+  }
+}
+.details .items {
+  width: 100%;
+  height: 100%;
+}
+#featured {
+  position: absolute;
+  margin-top: 15vh;
+  width: 50vw;
+  min-width: 30vw;
+  text-align: center;
+  padding: 10px;
+  background: transparent;
+  font-size: 2.3rem;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  text-shadow: 0.5px 0.25px 0.5px #253956, -0.5px -0.25px 0.5px #e3c6d2;
+}
+@media (max-width: 500px) {
+  #featured {
+    margin-left: 30%;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.c-container {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url("https://cdn.discordapp.com/attachments/644333219512188928/644357514607067156/auction-image.png");
+}
+.c-container nav {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .c-container nav {
+    flex-direction: column;
+  }
+}
+.c-container nav a {
+  display: flex;
+  margin: 1.5%;
+  width: 40vw;
+  height: 10vh;
+  text-decoration: none;
+  justify-content: space-around;
+  font-size: 3rem;
+  background-color: rgba(255, 255, 255, 0.45);
+  align-items: center;
+  color: black;
+  border: 1px solid black;
+  transition: all 0.75s ease-in-out;
+}
+@media (max-width: 500px) {
+  .c-container nav a {
+    font-size: 3rem;
+    margin: auto;
+    width: 95vw;
+  }
+}
+.c-container nav a:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: whitesmoke;
+  opacity: 1;
+  transform: scale(1.09);
+  transition: all 0.5s ease-in-out;
+  border: 4px ridge white;
+}
+.but {
+  height: 10vh;
+  border-radius: 1px;
+  width: 10vw;
+  padding: 5px;
+  padding: 0;
+  transition: all 0.25s ease-in-out;
+  background: rgba(87, 82, 84, 0.59);
+  font-family: 'Archivo Black', sans-serif;
+  color: #a4adba;
+  font-size: 1.9rem;
+}
+@media (max-width: 500px) {
+  .but {
+    width: 100vw;
+    height: 6vh;
+  }
+}
+.divTable {
+  margin-top: 50px;
+  margin-left: 50px;
+  display: table;
+  width: 100%;
+  top: 240px;
+  background: rgba(65, 75, 195, 0.5);
+}
+.divTableRow {
+  display: table-row;
+  height: 7vh;
+}
+.divTableHeading {
+  background: #EEE;
+  display: table-header-group;
+}
+.divTableCell,
+.divTableHead {
+  border: 1px solid #000000;
+  display: table-cell;
+  padding: 3px 10px;
+}
+.divTableHeading {
+  background-color: #EEE;
+  display: table-header-group;
+  font-weight: bold;
+}
+.divTableFoot {
+  background-color: #EEE;
+  display: table-footer-group;
+  font-weight: bold;
+}
+.divTableBody {
+  display: table-row-group;
+}
