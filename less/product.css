@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100vw;
   height: 100%;
   display: flex;
-  background: rgba(87, 82, 84, 0.79);
+  background: rgba(87, 82, 84, 0.59);
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -79,9 +79,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 1px;
   width: 10vw;
   padding: 5px;
-  padding: 0;
   transition: all 0.25s ease-in-out;
-  background: rgba(87, 82, 84, 0.79);
+  background: rgba(87, 82, 84, 0.59);
   font-family: 'Archivo Black', sans-serif;
   color: #a4adba;
   font-size: 1.9rem;

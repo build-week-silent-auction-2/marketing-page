@@ -1,52 +1,51 @@
 @import "var";
 
 
-*{
-    
-    overflow:hidden;
+* {
+
+	overflow: hidden;
 }
 
-body{
-    scrollbar-color: rebeccapurple green;
-scrollbar-width: thin;
-    position:absolue;
-    display:block;
-    height:auto;
-    width:100vw;
-    background:url('https://cdn.discordapp.com/attachments/644333219512188928/644357514607067156/auction-image.png');
+body {
+	scrollbar-color: rebeccapurple green;
+	scrollbar-width: thin;
+	position: absolue;
+	display: block;
+	height: auto;
+	width: 100vw;
+	background: url('https://cdn.discordapp.com/attachments/644333219512188928/644357514607067156/auction-image.png');
 
-  
+
 }
 
 
-button{
-    
-    text-shadow:(@text-shadow);
-    font-size:1.3rem;
-    
+button {
+	padding:5px;
+	text-shadow: (@text-shadow);
+	font-size: 1.3rem;
+
+
 }
 
-::-webkit-scrollbar-track
-{
-	box-shadow: inset 5px 0 6px rgba(0,0,0,0.9);
+::-webkit-scrollbar-track {
+	box-shadow: inset 5px 0 6px rgba(0, 0, 0, 0.9);
 	border-radius: 10px;
 	background-color: #444444;
 }
 
-::-webkit-scrollbar
-{
+::-webkit-scrollbar {
 	width: 12px;
 	background-color: #F5F5F5;
 }
-::-webkit-scrollbar-thumb
-{
+
+::-webkit-scrollbar-thumb {
 	border-radius: 10px;
-	background-color: #D62929;
+	background-color: @rgba-primary-2;
 	background-image: -webkit-linear-gradient(90deg,
-											  transparent,
-											  rgba(0, 0, 0, 0.7) 50%,
-											  transparent,
-											  transparent)
+			transparent,
+			rgba(0, 0, 0, 0.7) 50%,
+			transparent,
+			transparent)
 }
 
 // ::-webkit-scrollbar-track
