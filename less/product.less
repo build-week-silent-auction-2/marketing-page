@@ -7,17 +7,24 @@
     width: 100vw;
     height:100%;
     display: flex;
-   
+   background:@rgba-complement-2;
     flex-wrap:wrap;
     justify-content:center;
     
 
     .container-h {
         display:flex;
-        width:100%;
+        width:100vw;
         justify-content: space-around;
         height:12vh;
        padding:5px;
+       @media @mobile{
+           display:flex;
+           flex-direction: column;
+           height: 30vh;
+           width:100vw;
+       }
+
        
           .h-button{
             height:10vh;
@@ -27,11 +34,21 @@
             padding:0;
             transition:all .25s ease-in-out;
             background:@btn-color;
+            .archivo(@rgba-primary-1); 
+                    font-size: @textSize-l;
+            @media @mobile{
+                width:100vw;
+                height:6vh;
+
+            }
           }
-          .h-button:hover{
+
+        
+          .button:hover{
             transition:all .25s ease-in-out;
             transform:scale(1.05);
             border:4px ridge white;
+            box-shadow: inset antiquewhite 2px 2px 20px 2px;
           }
          
         
@@ -47,44 +64,110 @@
         justify-content: flex-start;
         background-size:contain;
         align-self:center;
-      
+        @media @mobile{
+                display:flex;
+                padding:15px;
+        }
         .line-1{
             margin-top:5vh;
             display: grid;
             position: relative;
-            box-shadow:3px 2px 2px 2px @rgba-primary-4, -3px -2px 2px 2px @rgba-primary-3;
+            box-shadow:3px 2px 2px 2px black, -3px -2px 2px -2px @rgba-primary-3;
             grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr;
             align-content: stretch;
-            grid-gap:3px;
-        
-            background-repeat: no-repeat;
-            background-size:cover;
-         
+            grid-gap:25px;
             overflow-x:scroll;
+            background-size:800px 400px;
+
+            @media @mobile{
+                padding-top:150px;
+                margin:10px;
+                display:flex;
+                flex-direction:column;
+                justify-content:space-around;
+                overflow-y:scroll;
+            }
+           
         .panels {
-          margin:5%;
-           min-width:15vw;
+           width:15vw;
             height:25vh;
-            // margin:5px;
+            margin:15px;
             border-radius:12px;
             border:4px ridge @rgba-primary-2;
+            padding:0;
             background:@panel-color;
-            transition:all .25s ease-in-out;
-            background-size:contain;
+            transition:all .35s ease-in-out;
+            background-size:cover;
             background-repeat:no-repeat;
-            background:url(../images/br.png);
+            background:url(../images/gavelSmall.png);
+
+            @media @mobile{
+                width:60vw;
+                min-height:50vh;
+                max-height:50vh;
+                margin:10px;
+            }
+            img{
+                left:0;
+                position:relative;
+                min-width:15vw;
+                min-height:19vh; 
+                @media @mobile{
+                    margin-top:20px;
+                    min-height:40vh;
+                    height:40vh;
+                    max-height:40vh;
+                }
+            }
+            .items{
+                max-width:100%;
+                max-height:80%;
+            }
+
+           .bid{
+               display:flex;
+                position:relative;
+                width:100%;
+                height:5vh;
+                background:@rgba-complement-4;
+                bottom:0;
+                padding:.5% 0 .5% 0;
+                justify-content:space-around;
+                font-size: 1.9rem;
+                // .mon-serif; 
+                .amt{
+                    .mon-serif; 
+                    font-size: @textSize-l;
+                }
+
+                button{
+                    padding:0;
+                    margin:0 0px;
+                    width:5vw;
+                    // min-width:5vw;
+                    .mon-serif; 
+                    font-size: @textSize-s;
+                }
+            }
         }
         .panels:hover{
-            margin-left:10%;
-            min-width:13vw;
             min-height:22vh;
-            transition:all .25s ease-in-out;
-            transform:scale(1.15);
+            transition:all .15s ease-in-out;
+            transform:scale(1.11);
             border:4px ridge white;
-        }
-    }
 
+            @media @mobile{
+                width:60vw;
+                min-height:50vh;
+                max-height:50vh;
+                margin:10px;
+                transform:scale(1.01);
+            }
+        }
+     
+    }
+   
         
     }
 
@@ -99,3 +182,40 @@
     }
 }
 
+.details{
+    display:none;
+    position:absolute;
+    background:white;
+    border:5px ridge black;
+    width:60vw;
+    height:80vh;
+    left:35%;
+    top:10%;
+    z-index:100;
+@media @mobile{
+    left:0;
+    width:100vw;
+}
+    .items{
+        width:100%;
+        height:100%;
+    }
+}
+
+
+
+#featured{
+    position:absolute;
+    margin-top:15vh;
+    width:50vw;
+    min-width:30vw;
+    text-align: center;
+    padding:10px;
+    background:transparent;
+    font-size:@textSize-xl;
+    .mon-serif;
+
+   @media @phone{
+       margin-left:30%;
+   }
+}

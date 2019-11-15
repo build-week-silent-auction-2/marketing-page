@@ -15,7 +15,7 @@
     align-items: center;
     // background-color: @bg;
     background-image: url("https://cdn.discordapp.com/attachments/644333219512188928/644357514607067156/auction-image.png");
-    
+   
     h1{
         display: flex;
         font-size: 9rem;
@@ -23,10 +23,16 @@
         padding-bottom: 10vh;
         font-weight: bold;
         color: @large-txt;
-        
+        @media @phone{
+            font-size: 5rem;
+        }
     }//end of h1
     nav{
         display: flex;
+        @media @phone{
+            flex-direction: column;
+            
+        }
         
         a {
             display: flex;
@@ -42,7 +48,12 @@
             border: 1px solid black;
             transition:all .75s ease-in-out;
             // opacity: .65;
-            
+            @media @phone {
+                font-size: 3rem;
+                margin: auto;
+                width: 95vw;
+                
+            }
 
             &:hover {
                 background-color: rgba(0,0,0,.75);

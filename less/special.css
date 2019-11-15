@@ -1,0 +1,18 @@
+.construct > .panels {
+  transform: rotateX(0deg) rotateY(0deg);
+  opacity: 1;
+  transition: all 5s ease-in-out;
+  flex-basis: fit-content;
+}
+#featured {
+  position: absolute;
+  margin-top: 10vh;
+  width: 50vw;
+  text-align: center;
+  padding: 10px;
+  background: transparent;
+}
+#featured #featured:hover {
+  background: transparent;
+  box-shadow: none;
+}

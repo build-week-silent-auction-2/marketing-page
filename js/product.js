@@ -1,24 +1,37 @@
 
-$(document).ready(function () {
-    if (!$.browser.webkit) {
-        $('.wrapper').html('<p>Sorry! Non webkit users. :(</p>');
-    }
-});
+
+let panel = $('.panels');
+let item = $('.items');
+let amount= $('.amt');
+let det = $('.details');
+let imgArr =[];
+
+amount.attr('value','$0.00');
+
+ 
+item.on('click',function(){
+    if($('.details').has('img').length){
+    $(".details img:last-child").remove();}
+    else{
+appendMe($(this));
+function appendMe(x){
+    det.toggle('slow');
+    let th = $(x);
+    let cl = th.clone(true);
+    console.log("here " + " "+x)
+    $('.details').append(cl);
+}
+}});
+
+det.on('click',function(e){
+    $(".details img:last-child").remove();
+    det.toggle('slow');
+})
 
 
 
-function open(){
-    $('.slide').hide("fade",200);
-$('#cover').show( "slide", { direction: "up"  }, 500 );
-contain.show( "slide", { direction: "up"  }, 500 );
-    arr.forEach(function (el) {
-        el.hide( "slide", { direction: "down"  }, 500 );
-    });
 
-    let clicked = $(this);
-    for(let i =0; i < 4; i++){
 
-        if(clicked.data("match") === arr[i].data("match")){
-            arr[i].show( "slide", { direction: "up"  }, 500 );
-        }
-   }}
+
+
+
