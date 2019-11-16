@@ -480,7 +480,10 @@ html {
   font-size: 62.5%;
   background-image: url("https://cdn.discordapp.com/attachments/644333219512188928/644357514607067156/auction-image.png");
 }
-.c-container {
+body {
+  overflow-y: scroll;
+}
+body .c-container {
   width: 100vw;
   height: 100%;
   display: flex;
@@ -488,19 +491,19 @@ html {
   justify-content: center;
 }
 @media (max-width: 500px) {
-  .c-container {
+  body .c-container {
     margin-top: 1vh;
   }
 }
-.c-container nav {
+body .c-container nav {
   display: flex;
 }
 @media (max-width: 500px) {
-  .c-container nav {
+  body .c-container nav {
     flex-direction: column;
   }
 }
-.c-container nav a {
+body .c-container nav a {
   display: flex;
   margin: 1.5%;
   width: 40vw;
@@ -515,14 +518,14 @@ html {
   transition: all 0.75s ease-in-out;
 }
 @media (max-width: 500px) {
-  .c-container nav a {
+  body .c-container nav a {
     font-size: 3rem;
     margin: auto;
     width: 95vw;
     margin-bottom: 2vh;
   }
 }
-.c-container nav a:hover {
+body .c-container nav a:hover {
   background-color: rgba(0, 0, 0, 0.75);
   color: whitesmoke;
   opacity: 1;
@@ -530,25 +533,25 @@ html {
   transition: all 0.5s ease-in-out;
   border: 4px ridge white;
 }
-.main-content {
+body .main-content {
   display: flex;
   margin: auto;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 @media (max-width: 500px) {
-  .main-content {
+  body .main-content {
     flex-direction: column;
     width: 100vw;
   }
 }
 @media (max-width: 800px) {
-  .main-content {
+  body .main-content {
     flex-direction: column;
     width: 100vw;
   }
 }
-.main-content h2 {
+body .main-content h2 {
   display: flex;
   margin: auto;
   justify-content: center;
@@ -558,17 +561,17 @@ html {
   margin: 2%;
 }
 @media (max-width: 800px) {
-  .main-content h2 {
+  body .main-content h2 {
     font-size: 6rem;
   }
 }
 @media (max-width: 500px) {
-  .main-content h2 {
+  body .main-content h2 {
     font-size: 5rem;
     width: 95vw;
   }
 }
-.main-content .meet-me {
+body .main-content .meet-me {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -578,7 +581,7 @@ html {
   margin: 2%;
   padding: 0% 2% 2% 2%;
 }
-.main-content .meet-me:hover {
+body .main-content .meet-me:hover {
   background-color: white;
   opacity: 1;
   transform: scale(1.09);
@@ -586,7 +589,7 @@ html {
   border: 4px ridge white;
 }
 @media (max-width: 800px) {
-  .main-content .meet-me {
+  body .main-content .meet-me {
     flex-direction: column;
     width: 96vw;
     padding-bottom: 2vh;
@@ -596,7 +599,7 @@ html {
   }
 }
 @media (max-width: 500px) {
-  .main-content .meet-me {
+  body .main-content .meet-me {
     width: 95vw;
     padding-bottom: 2vh;
     margin-bottom: 2vh;
@@ -604,7 +607,7 @@ html {
     margin: 2.5%;
   }
 }
-.main-content .meet-me h3 {
+body .main-content .meet-me h3 {
   width: 100vw;
   text-align: center;
   font-weight: bold;
@@ -612,13 +615,13 @@ html {
   margin-bottom: 2%;
   margin-top: 1%;
 }
-.main-content .meet-me h4 {
+body .main-content .meet-me h4 {
   width: 100vw;
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2%;
 }
-.main-content .meet-me p {
+body .main-content .meet-me p {
   font-size: 1.5rem;
 }
 .but {
