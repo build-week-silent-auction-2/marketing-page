@@ -347,7 +347,7 @@ button {
   grid-gap: 25px;
   overflow-x: scroll;
   background-size: 800px 400px;
-  background: #253956;
+  background: rgba(59, 78, 107, 0.5);
 }
 @media (max-width: 500px) {
   .main .main-content .line-1 {
