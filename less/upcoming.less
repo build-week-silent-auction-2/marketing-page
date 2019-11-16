@@ -1,0 +1,45 @@
+@import "product";
+@import "var";
+body{
+   overflow-y:scroll;
+
+.but{
+    height:10vh;
+            border-radius:1px;
+            width:10vw;
+            padding:5px;
+            padding:0;
+            transition:all .25s ease-in-out;
+            background:@btn-color;
+            .archivo(@rgba-primary-1); 
+                    font-size: @textSize-l;
+            @media @mobile{
+                width:100vw;
+                height:6vh;
+
+            }
+        }
+
+.divTable{
+    margin-top:50px;
+    margin-left:50px;
+   display: table;
+   width: 80%;
+   top:240px;
+   .judson-serif;
+   font-size: @textSize-ll;
+   background:rgba(65,75,195,.5);
+   margin-bottom:50px;
+}
+.divTableRow {
+   display: table-row;
+   height:7vh;
+} 
+td, th {
+   text-align: center;
+   border: 5px solid rgba(0,0,0,.25);
+   padding: 1.5rem;
+ }
+}
+
+

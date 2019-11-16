@@ -1,0 +1,10 @@
+.construct > .panels {
+  transform: rotateX(0deg) rotateY(0deg);
+  opacity: 1;
+  transition: all 5s ease-in-out;
+  flex-basis: fit-content;
+}
+#featured {
+  top: 10vw;
+  width: 50vw;
+}

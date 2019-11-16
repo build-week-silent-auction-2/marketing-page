@@ -1,0 +1,66 @@
+/* Main Primary color */
+/* Main Complement color */
+.judson-serif {
+  font-family: 'Judson', serif;
+  color: black;
+  text-shadow: 2px 1px 2px black;
+}
+.mon-serif {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+/**body {
+ font-family: 'Quicksand', sans-serif;
+ font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-weight: 500;
+}
+**/
+/**
+body {
+ font-family: 'Judson', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Archivo Black', sans-serif;
+}
+**/
+/**
+body {
+ font-family: 'Roboto', sans-serif;
+ font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Abril Fatface', serif;
+}
+modern curvy
+**/
+/**
+body {
+ font-family: 'Work Sans', sans-serif;
+ font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Montserrat', sans-serif;
+ font-weight: 900;
+}
+**/
+body {
+  scrollbar-color: rebeccapurple green;
+  scrollbar-width: thin;
+  position: absolue;
+  display: block;
+  height: auto;
+  width: 100vw;
+  background: url('https://cdn.discordapp.com/attachments/644333219512188928/644357514607067156/auction-image.png');
+  overflow: hidden;
+}
+button {
+  padding: 5px;
+  text-shadow: 2px 1px 2px black;
+  font-size: 1.3rem;
+}
