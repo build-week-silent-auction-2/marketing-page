@@ -14,13 +14,17 @@ html{
     display: flex;
     flex-wrap:wrap;
     justify-content:center;
-    
+    @media @phone{
+        margin-top: 1vh;
+        
+    }
    
   
     nav{
         display: flex;
         @media @phone{
             flex-direction: column;
+           
             
         }
         
@@ -42,7 +46,7 @@ html{
                 font-size: 3rem;
                 margin: auto;
                 width: 95vw;
-                
+                margin-bottom: 2vh;
             }
 
             &:hover {
@@ -103,6 +107,9 @@ html{
         &:hover{
             background-color: white;
             opacity: 1;
+            transform:scale(1.09);
+            transition:all .5s ease-in-out;
+            border:4px ridge white;
         }
         @media @tablet {
             flex-direction: column;

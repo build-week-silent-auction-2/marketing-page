@@ -195,11 +195,13 @@ button {
 @media (max-width: 800px) {
   .container h1 {
     font-size: 6rem;
+    padding-bottom: 5vh;
   }
 }
 @media (max-width: 500px) {
   .container h1 {
     font-size: 5rem;
+    padding-bottom: 5vh;
   }
 }
 .container nav {
@@ -240,6 +242,7 @@ button {
     font-size: 3rem;
     margin: auto;
     width: 95vw;
+    margin-bottom: 3vh;
   }
 }
 .container nav a:hover {
@@ -484,6 +487,11 @@ html {
   flex-wrap: wrap;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .c-container {
+    margin-top: 1vh;
+  }
+}
 .c-container nav {
   display: flex;
 }
@@ -511,6 +519,7 @@ html {
     font-size: 3rem;
     margin: auto;
     width: 95vw;
+    margin-bottom: 2vh;
   }
 }
 .c-container nav a:hover {
@@ -572,6 +581,9 @@ html {
 .main-content .meet-me:hover {
   background-color: white;
   opacity: 1;
+  transform: scale(1.09);
+  transition: all 0.5s ease-in-out;
+  border: 4px ridge white;
 }
 @media (max-width: 800px) {
   .main-content .meet-me {
