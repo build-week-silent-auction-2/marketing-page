@@ -23,12 +23,16 @@
         padding-bottom: 10vh;
         font-weight: bold;
         color: @large-txt;
+        @media @tablet{
+            font-size: 6rem;
+        }
         @media @phone{
             font-size: 5rem;
         }
     }//end of h1
     nav{
         display: flex;
+        
         @media @phone{
             flex-direction: column;
             
@@ -48,6 +52,16 @@
             border: 1px solid black;
             transition:all .75s ease-in-out;
             // opacity: .65;
+            @media @tablet {
+                flex-direction: column;
+                width: 96vw;
+                padding-bottom: 2vh;
+                margin-bottom: 2vh;
+                justify-content: center;
+                margin: 2.5%;
+                font-size: 2rem;
+                
+            }
             @media @phone {
                 font-size: 3rem;
                 margin: auto;
