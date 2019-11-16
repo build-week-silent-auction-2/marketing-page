@@ -3,53 +3,12 @@
 .judson-serif {
   font-family: 'Judson', serif;
   color: black;
-  text-shadow: 0.5px 0.25px 0.5px #253956, -0.5px -0.25px 0.5px #e3c6d2;
+  text-shadow: 2px 1px 2px black;
 }
 .mon-serif {
   font-family: 'Montserrat', sans-serif;
   color: black;
-  text-shadow: 0.5px 0.25px 0.5px #253956, -0.5px -0.25px 0.5px #e3c6d2;
 }
-/**body {
- font-family: 'Quicksand', sans-serif;
- font-weight: 300;
-}
-
-h1, h2, h3, h4, h5, h6 {
- font-weight: 500;
-}
-**/
-/**
-body {
- font-family: 'Judson', serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
- font-family: 'Archivo Black', sans-serif;
-}
-**/
-/**
-body {
- font-family: 'Roboto', sans-serif;
- font-weight: 300;
-}
-
-h1, h2, h3, h4, h5, h6 {
- font-family: 'Abril Fatface', serif;
-}
-modern curvy
-**/
-/**
-body {
- font-family: 'Work Sans', sans-serif;
- font-weight: 300;
-}
-
-h1, h2, h3, h4, h5, h6 {
- font-family: 'Montserrat', sans-serif;
- font-weight: 900;
-}
-**/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -181,8 +140,8 @@ table {
 html {
   font-size: 62.5%;
 }
-* {
-  overflow: hidden;
+a {
+  text-decoration: none;
 }
 body {
   scrollbar-color: rebeccapurple green;
@@ -192,24 +151,12 @@ body {
   height: auto;
   width: 100vw;
   background: url('https://cdn.discordapp.com/attachments/644333219512188928/644357514607067156/auction-image.png');
+  overflow: hidden;
 }
 button {
+  padding: 5px;
   text-shadow: 2px 1px 2px black;
   font-size: 1.3rem;
-}
-::-webkit-scrollbar-track {
-  box-shadow: inset 5px 0 6px rgba(0, 0, 0, 0.9);
-  border-radius: 10px;
-  background-color: #444444;
-}
-::-webkit-scrollbar {
-  width: 12px;
-  background-color: #F5F5F5;
-}
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: #D62929;
-  background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.7) 50%, transparent, transparent);
 }
 * {
   box-sizing: border-box;
@@ -231,6 +178,11 @@ button {
   padding-bottom: 10vh;
   font-weight: bold;
   color: #1e27ac;
+}
+@media (max-width: 800px) {
+  .container h1 {
+    font-size: 6rem;
+  }
 }
 @media (max-width: 500px) {
   .container h1 {
@@ -259,6 +211,17 @@ button {
   border: 1px solid black;
   transition: all 0.75s ease-in-out;
 }
+@media (max-width: 800px) {
+  .container nav a {
+    flex-direction: column;
+    width: 96vw;
+    padding-bottom: 2vh;
+    margin-bottom: 2vh;
+    justify-content: center;
+    margin: 2.5%;
+    font-size: 2rem;
+  }
+}
 @media (max-width: 500px) {
   .container nav a {
     font-size: 3rem;
@@ -274,6 +237,145 @@ button {
   transition: all 0.5s ease-in-out;
   border: 4px ridge white;
 }
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  background-image: url("https://cdn.discordapp.com/attachments/644333219512188928/644357514607067156/auction-image.png");
+}
+.c-container {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.c-container nav {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .c-container nav {
+    flex-direction: column;
+  }
+}
+.c-container nav a {
+  display: flex;
+  margin: 1.5%;
+  width: 40vw;
+  height: 10vh;
+  text-decoration: none;
+  justify-content: space-around;
+  font-size: 3rem;
+  background-color: rgba(255, 255, 255, 0.45);
+  align-items: center;
+  color: black;
+  border: 1px solid black;
+  transition: all 0.75s ease-in-out;
+}
+@media (max-width: 500px) {
+  .c-container nav a {
+    font-size: 3rem;
+    margin: auto;
+    width: 95vw;
+  }
+}
+.c-container nav a:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: whitesmoke;
+  opacity: 1;
+  transform: scale(1.09);
+  transition: all 0.5s ease-in-out;
+  border: 4px ridge white;
+}
+.main-content {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .main-content {
+    flex-direction: column;
+    width: 100vw;
+  }
+}
+@media (max-width: 800px) {
+  .main-content {
+    flex-direction: column;
+    width: 100vw;
+  }
+}
+.main-content h2 {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  width: 100vw;
+  font-size: 7rem;
+  font-weight: bold;
+  margin: 2%;
+}
+@media (max-width: 800px) {
+  .main-content h2 {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 500px) {
+  .main-content h2 {
+    font-size: 5rem;
+    width: 95vw;
+  }
+}
+.main-content .meet-me {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #a4adba;
+  border: 1px solid black;
+  width: 45vw;
+  margin: 2%;
+  padding: 0% 2% 2% 2%;
+}
+.main-content .meet-me:hover {
+  background-color: white;
+  opacity: 1;
+}
+@media (max-width: 800px) {
+  .main-content .meet-me {
+    flex-direction: column;
+    width: 96vw;
+    padding-bottom: 2vh;
+    margin-bottom: 2vh;
+    justify-content: center;
+    margin: 2.5%;
+  }
+}
+@media (max-width: 500px) {
+  .main-content .meet-me {
+    width: 95vw;
+    padding-bottom: 2vh;
+    margin-bottom: 2vh;
+    justify-content: center;
+    margin: 2.5%;
+  }
+}
+.main-content .meet-me h3 {
+  width: 100vw;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 2%;
+  margin-top: 1%;
+}
+.main-content .meet-me h4 {
+  width: 100vw;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2%;
+}
+.main-content .meet-me p {
+  font-size: 1.5rem;
+}
 .main {
   position: absolute;
   width: 100vw;
@@ -282,6 +384,7 @@ button {
   background: rgba(87, 82, 84, 0.59);
   flex-wrap: wrap;
   justify-content: center;
+  overflow: none;
 }
 .main .container-h {
   display: flex;
@@ -303,12 +406,11 @@ button {
   border-radius: 1px;
   width: 10vw;
   padding: 5px;
-  padding: 0;
-  transition: all 0.25s ease-in-out;
+  transition: all 0.45s ease-in-out;
   background: rgba(87, 82, 84, 0.59);
-  font-family: 'Archivo Black', sans-serif;
-  color: #a4adba;
-  font-size: 1.9rem;
+  color: black;
+  font-family: 'Judson', serif;
+  font-size: 2.1rem;
 }
 @media (max-width: 500px) {
   .main .container-h .h-button {
@@ -316,11 +418,22 @@ button {
     height: 6vh;
   }
 }
+.main .container-h .h-button > a {
+  color: black;
+  font-family: 'Judson', serif;
+  text-shadow: none;
+}
 .main .container-h .button:hover {
-  transition: all 0.25s ease-in-out;
-  transform: scale(1.05);
-  border: 4px ridge white;
-  box-shadow: inset antiquewhite 2px 2px 20px 2px;
+  transition: all 0.45s ease-in-out;
+  transform: scale(1.02);
+  border: 2px ridge white;
+  box-shadow: inset black 2px 2px 50px 2px;
+  color: antiquewhite;
+}
+.main .container-h .button:hover a:hover {
+  transition: all 0.45s ease-in-out;
+  transform: scale(1.02);
+  color: antiquewhite;
 }
 .main .main-content {
   width: 80vw;
@@ -342,13 +455,14 @@ button {
   margin-top: 5vh;
   display: grid;
   position: relative;
-  box-shadow: 3px 2px 2px 2px black, -3px -2px 2px -2px rgba(59, 78, 107, 0.5);
+  box-shadow: outset 3px 2px 2px 2px black, -3px -2px 2px -2px rgba(59, 78, 107, 0.5);
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   align-content: stretch;
   grid-gap: 25px;
   overflow-x: scroll;
   background-size: 800px 400px;
+  background: rgba(59, 78, 107, 0.5);
 }
 @media (max-width: 500px) {
   .main .main-content .line-1 {
@@ -364,7 +478,7 @@ button {
   width: 15vw;
   height: 25vh;
   margin: 15px;
-  border-radius: 12px;
+  border-radius: 2px;
   border: 4px ridge #768498;
   padding: 0;
   background: rgba(114, 100, 106, 0.68);
@@ -411,9 +525,9 @@ button {
   font-size: 1.9rem;
 }
 .main .main-content .line-1 .panels .bid .amt {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Judson', serif;
   color: black;
-  text-shadow: 0.5px 0.25px 0.5px #253956, -0.5px -0.25px 0.5px #e3c6d2;
+  text-shadow: 2px 1px 2px black;
   font-size: 1.9rem;
 }
 .main .main-content .line-1 .panels .bid button {
@@ -422,14 +536,13 @@ button {
   width: 5vw;
   font-family: 'Montserrat', sans-serif;
   color: black;
-  text-shadow: 0.5px 0.25px 0.5px #253956, -0.5px -0.25px 0.5px #e3c6d2;
   font-size: 1.3rem;
 }
 .main .main-content .line-1 .panels:hover {
   min-height: 22vh;
   transition: all 0.15s ease-in-out;
-  transform: scale(1.11);
   border: 4px ridge white;
+  box-shadow: #e3c6d2 0px 0px 20px 0px;
 }
 @media (max-width: 500px) {
   .main .main-content .line-1 .panels:hover {
@@ -479,97 +592,69 @@ button {
   font-size: 2.3rem;
   font-family: 'Montserrat', sans-serif;
   color: black;
-  text-shadow: 0.5px 0.25px 0.5px #253956, -0.5px -0.25px 0.5px #e3c6d2;
 }
 @media (max-width: 500px) {
   #featured {
     margin-left: 30%;
   }
 }
-* {
-  box-sizing: border-box;
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #e3c6d2;
 }
-html {
-  font-size: 62.5%;
+::-webkit-scrollbar {
+  height: 20px;
 }
-.c-container {
-  position: absolute;
-  width: 100vw;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-image: url("https://cdn.discordapp.com/attachments/644333219512188928/644357514607067156/auction-image.png");
+::-webkit-scrollbar-thumb {
+  border: 7px ridge #768498;
+  width: 25px;
+  border-radius: 10px;
 }
-.c-container nav {
-  display: flex;
+::-webkit-scrollbar-track-piece {
+  background: rgba(114, 100, 106, 0.68);
+  padding: 10px;
 }
-@media (max-width: 500px) {
-  .c-container nav {
-    flex-direction: column;
-  }
+body {
+  overflow-y: scroll;
 }
-.c-container nav a {
-  display: flex;
-  margin: 2%;
-  width: 22vw;
-  height: 20vh;
-  text-decoration: none;
-  justify-content: space-evenly;
-  font-size: 3rem;
-  background-color: rgba(255, 255, 255, 0.45);
-  align-items: center;
-  color: black;
-  border: 1px solid black;
-  transition: all 0.75s ease-in-out;
+body .but {
+  height: 10vh;
+  border-radius: 1px;
+  width: 10vw;
+  padding: 5px;
+  padding: 0;
+  transition: all 0.25s ease-in-out;
+  background: rgba(87, 82, 84, 0.59);
+  font-family: 'Archivo Black', sans-serif;
+  color: #a4adba;
+  font-size: 1.9rem;
 }
 @media (max-width: 500px) {
-  .c-container nav a {
-    font-size: 3rem;
-    margin: auto;
-    width: 95vw;
+  body .but {
+    width: 100vw;
+    height: 6vh;
   }
 }
-.c-container nav a:hover {
-  background-color: rgba(0, 0, 0, 0.75);
-  color: whitesmoke;
-  opacity: 1;
-  transform: scale(1.09);
-  transition: all 0.5s ease-in-out;
-  border: 4px ridge white;
-}
-.divTable {
+body .divTable {
   margin-top: 50px;
   margin-left: 50px;
   display: table;
-  width: 100%;
+  width: 80%;
   top: 240px;
+  font-family: 'Judson', serif;
+  color: black;
+  text-shadow: 2px 1px 2px black;
+  font-size: 2.1rem;
   background: rgba(65, 75, 195, 0.5);
+  margin-bottom: 50px;
 }
-.divTableRow {
+body .divTableRow {
   display: table-row;
   height: 7vh;
 }
-.divTableHeading {
-  background: #EEE;
-  display: table-header-group;
-}
-.divTableCell,
-.divTableHead {
-  border: 1px solid #000000;
-  display: table-cell;
-  padding: 3px 10px;
-}
-.divTableHeading {
-  background-color: #EEE;
-  display: table-header-group;
-  font-weight: bold;
-}
-.divTableFoot {
-  background-color: #EEE;
-  display: table-footer-group;
-  font-weight: bold;
-}
-.divTableBody {
-  display: table-row-group;
+body td,
+body th {
+  text-align: center;
+  border: 5px solid rgba(0, 0, 0, 0.25);
+  padding: 1.5rem;
 }

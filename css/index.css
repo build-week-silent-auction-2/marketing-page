@@ -237,6 +237,145 @@ button {
   transition: all 0.5s ease-in-out;
   border: 4px ridge white;
 }
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  background-image: url("https://cdn.discordapp.com/attachments/644333219512188928/644357514607067156/auction-image.png");
+}
+.c-container {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.c-container nav {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .c-container nav {
+    flex-direction: column;
+  }
+}
+.c-container nav a {
+  display: flex;
+  margin: 1.5%;
+  width: 40vw;
+  height: 10vh;
+  text-decoration: none;
+  justify-content: space-around;
+  font-size: 3rem;
+  background-color: rgba(255, 255, 255, 0.45);
+  align-items: center;
+  color: black;
+  border: 1px solid black;
+  transition: all 0.75s ease-in-out;
+}
+@media (max-width: 500px) {
+  .c-container nav a {
+    font-size: 3rem;
+    margin: auto;
+    width: 95vw;
+  }
+}
+.c-container nav a:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: whitesmoke;
+  opacity: 1;
+  transform: scale(1.09);
+  transition: all 0.5s ease-in-out;
+  border: 4px ridge white;
+}
+.main-con {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .main-con {
+    flex-direction: column;
+    width: 100vw;
+  }
+}
+@media (max-width: 800px) {
+  .main-con {
+    flex-direction: column;
+    width: 100vw;
+  }
+}
+.main-con h2 {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  width: 100vw;
+  font-size: 7rem;
+  font-weight: bold;
+  margin: 2%;
+}
+@media (max-width: 800px) {
+  .main-con h2 {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 500px) {
+  .main-con h2 {
+    font-size: 5rem;
+    width: 95vw;
+  }
+}
+.main-con .meet-me {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #a4adba;
+  border: 1px solid black;
+  width: 45vw;
+  margin: 2%;
+  padding: 0% 2% 2% 2%;
+}
+.main-con .meet-me:hover {
+  background-color: white;
+  opacity: 1;
+}
+@media (max-width: 800px) {
+  .main-con .meet-me {
+    flex-direction: column;
+    width: 96vw;
+    padding-bottom: 2vh;
+    margin-bottom: 2vh;
+    justify-content: center;
+    margin: 2.5%;
+  }
+}
+@media (max-width: 500px) {
+  .main-con .meet-me {
+    width: 95vw;
+    padding-bottom: 2vh;
+    margin-bottom: 2vh;
+    justify-content: center;
+    margin: 2.5%;
+  }
+}
+.main-con .meet-me h3 {
+  width: 100vw;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 2%;
+  margin-top: 1%;
+}
+.main-con .meet-me h4 {
+  width: 100vw;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2%;
+}
+.main-con .meet-me p {
+  font-size: 1.5rem;
+}
 .main {
   position: absolute;
   width: 100vw;
@@ -474,148 +613,6 @@ button {
 ::-webkit-scrollbar-track-piece {
   background: rgba(114, 100, 106, 0.68);
   padding: 10px;
-}
-* {
-  box-sizing: border-box;
-}
-html {
-  font-size: 62.5%;
-  background-image: url("https://cdn.discordapp.com/attachments/644333219512188928/644357514607067156/auction-image.png");
-}
-body {
-  overflow-y: scroll;
-}
-body .c-container {
-  width: 100vw;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-body .c-container nav {
-  display: flex;
-}
-@media (max-width: 500px) {
-  body .c-container nav {
-    flex-direction: column;
-  }
-}
-body .c-container nav a {
-  display: flex;
-  margin: 1.5%;
-  width: 40vw;
-  height: 10vh;
-  text-decoration: none;
-  justify-content: space-around;
-  font-size: 3rem;
-  background-color: rgba(255, 255, 255, 0.45);
-  align-items: center;
-  color: black;
-  border: 1px solid black;
-  transition: all 0.75s ease-in-out;
-}
-@media (max-width: 500px) {
-  body .c-container nav a {
-    font-size: 3rem;
-    margin: auto;
-    width: 95vw;
-  }
-}
-body .c-container nav a:hover {
-  background-color: rgba(0, 0, 0, 0.75);
-  color: whitesmoke;
-  opacity: 1;
-  transform: scale(1.09);
-  transition: all 0.5s ease-in-out;
-  border: 4px ridge white;
-}
-body .main-content {
-  display: flex;
-  margin: auto;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-@media (max-width: 500px) {
-  body .main-content {
-    flex-direction: column;
-    width: 100vw;
-  }
-}
-@media (max-width: 800px) {
-  body .main-content {
-    flex-direction: column;
-    width: 100vw;
-  }
-}
-body .main-content h2 {
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  width: 100vw;
-  font-size: 7rem;
-  font-weight: bold;
-  margin: 2%;
-}
-@media (max-width: 800px) {
-  body .main-content h2 {
-    font-size: 6rem;
-  }
-}
-@media (max-width: 500px) {
-  body .main-content h2 {
-    font-size: 5rem;
-    width: 95vw;
-  }
-}
-body .main-content .meet-me {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: #a4adba;
-  border: 1px solid black;
-  width: 45vw;
-  margin: 2%;
-  padding: 0% 2% 2% 2%;
-}
-body .main-content .meet-me:hover {
-  background-color: white;
-  opacity: 1;
-}
-@media (max-width: 800px) {
-  body .main-content .meet-me {
-    flex-direction: column;
-    width: 96vw;
-    padding-bottom: 2vh;
-    margin-bottom: 2vh;
-    justify-content: center;
-    margin: 2.5%;
-  }
-}
-@media (max-width: 500px) {
-  body .main-content .meet-me {
-    width: 95vw;
-    padding-bottom: 2vh;
-    margin-bottom: 2vh;
-    justify-content: center;
-    margin: 2.5%;
-  }
-}
-body .main-content .meet-me h3 {
-  width: 100vw;
-  text-align: center;
-  font-weight: bold;
-  font-size: 3rem;
-  margin-bottom: 2%;
-  margin-top: 1%;
-}
-body .main-content .meet-me h4 {
-  width: 100vw;
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2%;
-}
-body .main-content .meet-me p {
-  font-size: 1.5rem;
 }
 body {
   overflow-y: scroll;

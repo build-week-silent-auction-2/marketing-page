@@ -16,25 +16,22 @@ html {
   font-size: 62.5%;
   background-image: url("https://cdn.discordapp.com/attachments/644333219512188928/644357514607067156/auction-image.png");
 }
-body {
-  overflow-y: scroll;
-}
-body .c-container {
+.c-container {
   width: 100vw;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-body .c-container nav {
+.c-container nav {
   display: flex;
 }
 @media (max-width: 500px) {
-  body .c-container nav {
+  .c-container nav {
     flex-direction: column;
   }
 }
-body .c-container nav a {
+.c-container nav a {
   display: flex;
   margin: 1.5%;
   width: 40vw;
@@ -49,13 +46,13 @@ body .c-container nav a {
   transition: all 0.75s ease-in-out;
 }
 @media (max-width: 500px) {
-  body .c-container nav a {
+  .c-container nav a {
     font-size: 3rem;
     margin: auto;
     width: 95vw;
   }
 }
-body .c-container nav a:hover {
+.c-container nav a:hover {
   background-color: rgba(0, 0, 0, 0.75);
   color: whitesmoke;
   opacity: 1;
@@ -63,25 +60,25 @@ body .c-container nav a:hover {
   transition: all 0.5s ease-in-out;
   border: 4px ridge white;
 }
-body .main-content {
+.main-con {
   display: flex;
   margin: auto;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 @media (max-width: 500px) {
-  body .main-content {
+  .main-con {
     flex-direction: column;
     width: 100vw;
   }
 }
 @media (max-width: 800px) {
-  body .main-content {
+  .main-con {
     flex-direction: column;
     width: 100vw;
   }
 }
-body .main-content h2 {
+.main-con h2 {
   display: flex;
   margin: auto;
   justify-content: center;
@@ -91,17 +88,17 @@ body .main-content h2 {
   margin: 2%;
 }
 @media (max-width: 800px) {
-  body .main-content h2 {
+  .main-con h2 {
     font-size: 6rem;
   }
 }
 @media (max-width: 500px) {
-  body .main-content h2 {
+  .main-con h2 {
     font-size: 5rem;
     width: 95vw;
   }
 }
-body .main-content .meet-me {
+.main-con .meet-me {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -111,12 +108,12 @@ body .main-content .meet-me {
   margin: 2%;
   padding: 0% 2% 2% 2%;
 }
-body .main-content .meet-me:hover {
+.main-con .meet-me:hover {
   background-color: white;
   opacity: 1;
 }
 @media (max-width: 800px) {
-  body .main-content .meet-me {
+  .main-con .meet-me {
     flex-direction: column;
     width: 96vw;
     padding-bottom: 2vh;
@@ -126,7 +123,7 @@ body .main-content .meet-me:hover {
   }
 }
 @media (max-width: 500px) {
-  body .main-content .meet-me {
+  .main-con .meet-me {
     width: 95vw;
     padding-bottom: 2vh;
     margin-bottom: 2vh;
@@ -134,7 +131,7 @@ body .main-content .meet-me:hover {
     margin: 2.5%;
   }
 }
-body .main-content .meet-me h3 {
+.main-con .meet-me h3 {
   width: 100vw;
   text-align: center;
   font-weight: bold;
@@ -142,12 +139,12 @@ body .main-content .meet-me h3 {
   margin-bottom: 2%;
   margin-top: 1%;
 }
-body .main-content .meet-me h4 {
+.main-con .meet-me h4 {
   width: 100vw;
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2%;
 }
-body .main-content .meet-me p {
+.main-con .meet-me p {
   font-size: 1.5rem;
 }
