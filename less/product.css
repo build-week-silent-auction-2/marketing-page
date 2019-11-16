@@ -9,72 +9,42 @@
   font-family: 'Montserrat', sans-serif;
   color: black;
 }
-/**body {
- font-family: 'Quicksand', sans-serif;
- font-weight: 300;
-}
-
-h1, h2, h3, h4, h5, h6 {
- font-weight: 500;
-}
-**/
-/**
-body {
- font-family: 'Judson', serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
- font-family: 'Archivo Black', sans-serif;
-}
-**/
-/**
-body {
- font-family: 'Roboto', sans-serif;
- font-weight: 300;
-}
-
-h1, h2, h3, h4, h5, h6 {
- font-family: 'Abril Fatface', serif;
-}
-modern curvy
-**/
-/**
-body {
- font-family: 'Work Sans', sans-serif;
- font-weight: 300;
-}
-
-h1, h2, h3, h4, h5, h6 {
- font-family: 'Montserrat', sans-serif;
- font-weight: 900;
-}
-**/
-.main {
+body .main {
   position: absolute;
   width: 100vw;
   height: 100%;
   display: flex;
-  background: rgba(87, 82, 84, 0.59);
   flex-wrap: wrap;
   justify-content: center;
   overflow: none;
 }
-.main .container-h {
+@media (max-width: 500px) {
+  body .main {
+    display: block;
+    padding: 0px;
+  }
+}
+body .main .container-h {
   display: flex;
   width: 100vw;
   justify-content: space-around;
   height: 12vh;
   padding: 5px;
+  background: url('../images/logo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 @media (max-width: 500px) {
-  .main .container-h {
+  body .main .container-h {
     display: flex;
     flex-direction: column;
     height: 30vh;
     width: 100vw;
+    background: none;
   }
 }
-.main .container-h .h-button {
+body .main .container-h .h-button {
   height: 10vh;
   border-radius: 1px;
   width: 10vw;
@@ -86,29 +56,31 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2.1rem;
 }
 @media (max-width: 500px) {
-  .main .container-h .h-button {
-    width: 100vw;
+  body .main .container-h .h-button {
+    width: 90vw;
     height: 6vh;
+    z-index: 10;
+    margin-left: 10px;
   }
 }
-.main .container-h .h-button > a {
+body .main .container-h .h-button > a {
   color: black;
   font-family: 'Judson', serif;
   text-shadow: none;
 }
-.main .container-h .button:hover {
+body .main .container-h .button:hover {
   transition: all 0.45s ease-in-out;
   transform: scale(1.02);
   border: 2px ridge white;
   box-shadow: inset black 2px 2px 50px 2px;
   color: antiquewhite;
 }
-.main .container-h .button:hover a:hover {
+body .main .container-h .button:hover a:hover {
   transition: all 0.45s ease-in-out;
   transform: scale(1.02);
   color: antiquewhite;
 }
-.main .main-content {
+body .main .main-content {
   width: 80vw;
   height: 90%;
   display: flex;
@@ -119,12 +91,21 @@ h1, h2, h3, h4, h5, h6 {
   align-self: center;
 }
 @media (max-width: 500px) {
-  .main .main-content {
-    display: flex;
-    padding: 15px;
+  body .main .main-content {
+    position: relative;
+    width: 100vw;
+    display: block;
+    padding: 5px;
+    margin: 0;
+    margin-top: -35px;
+    z-index: 0;
+    background: url('../images/logo.png');
+    background-repeat: no-repeat;
+    background-position: top 0px 5px;
+    background-size: contain;
   }
 }
-.main .main-content .line-1 {
+body .main .main-content .line-1 {
   margin-top: 5vh;
   display: grid;
   position: relative;
@@ -138,16 +119,16 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(59, 78, 107, 0.5);
 }
 @media (max-width: 500px) {
-  .main .main-content .line-1 {
+  body .main .main-content .line-1 {
+    width: 90vw;
     padding-top: 150px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    overflow-y: scroll;
+    display: block;
+    overflow: hidden;
+    background: transparent;
+    position: absolute;
   }
 }
-.main .main-content .line-1 .panels {
+body .main .main-content .line-1 .panels {
   width: 15vw;
   height: 25vh;
   margin: 15px;
@@ -161,32 +142,34 @@ h1, h2, h3, h4, h5, h6 {
   background: url(../images/gavelSmall.png);
 }
 @media (max-width: 500px) {
-  .main .main-content .line-1 .panels {
-    width: 60vw;
+  body .main .main-content .line-1 .panels {
+    width: 90vw;
     min-height: 50vh;
     max-height: 50vh;
-    margin: 10px;
+    margin: 10px 5px 10px 20px;
+    padding: 5px;
   }
 }
-.main .main-content .line-1 .panels img {
+body .main .main-content .line-1 .panels img {
   left: 0;
   position: relative;
   min-width: 15vw;
   min-height: 19vh;
 }
 @media (max-width: 500px) {
-  .main .main-content .line-1 .panels img {
+  body .main .main-content .line-1 .panels img {
+    width: 100%;
     margin-top: 20px;
     min-height: 40vh;
-    height: 40vh;
-    max-height: 40vh;
+    height: 80%;
+    max-height: 80%;
   }
 }
-.main .main-content .line-1 .panels .items {
+body .main .main-content .line-1 .panels .items {
   max-width: 100%;
   max-height: 80%;
 }
-.main .main-content .line-1 .panels .bid {
+body .main .main-content .line-1 .panels .bid {
   display: flex;
   position: relative;
   width: 100%;
@@ -197,13 +180,13 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-around;
   font-size: 1.9rem;
 }
-.main .main-content .line-1 .panels .bid .amt {
+body .main .main-content .line-1 .panels .bid .amt {
   font-family: 'Judson', serif;
   color: black;
   text-shadow: 2px 1px 2px black;
   font-size: 1.9rem;
 }
-.main .main-content .line-1 .panels .bid button {
+body .main .main-content .line-1 .panels .bid button {
   padding: 0;
   margin: 0 0px;
   width: 5vw;
@@ -211,29 +194,28 @@ h1, h2, h3, h4, h5, h6 {
   color: black;
   font-size: 1.3rem;
 }
-.main .main-content .line-1 .panels:hover {
+body .main .main-content .line-1 .panels:hover {
   min-height: 22vh;
   transition: all 0.15s ease-in-out;
   border: 4px ridge white;
   box-shadow: #e3c6d2 0px 0px 20px 0px;
 }
 @media (max-width: 500px) {
-  .main .main-content .line-1 .panels:hover {
-    width: 60vw;
+  body .main .main-content .line-1 .panels:hover {
+    width: 90vw;
     min-height: 50vh;
     max-height: 50vh;
-    margin: 10px;
     transform: scale(1.01);
   }
 }
-.main .footer {
+body .main .footer {
   position: relative;
   margin: 5%;
   width: 100%;
   height: 5vh;
   background: #768498;
 }
-.details {
+body .details {
   display: none;
   position: absolute;
   background: white;
@@ -245,12 +227,13 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 100;
 }
 @media (max-width: 500px) {
-  .details {
+  body .details {
+    position: fixed;
     left: 0;
     width: 100vw;
   }
 }
-.details .items {
+body .details .items {
   width: 100%;
   height: 100%;
 }
@@ -258,7 +241,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   margin-top: 15vh;
   width: 50vw;
-  min-width: 30vw;
+  min-width: 50vw;
   text-align: center;
   padding: 10px;
   background: transparent;
@@ -268,7 +251,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 500px) {
   #featured {
-    margin-left: 30%;
+    align-self: center;
+    margin-top: 200px;
   }
 }
 ::-webkit-scrollbar-track {

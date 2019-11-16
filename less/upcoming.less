@@ -1,45 +1,81 @@
 @import "product";
 @import "var";
-body{
-   overflow-y:scroll;
 
-.but{
-    height:10vh;
-            border-radius:1px;
-            width:10vw;
-            padding:5px;
-            padding:0;
-            transition:all .25s ease-in-out;
-            background:@btn-color;
-            .archivo(@rgba-primary-1); 
-                    font-size: @textSize-l;
-            @media @mobile{
-                width:100vw;
-                height:6vh;
+body {
+   overflow-y: scroll;
 
-            }
-        }
+   .con-h {
+      display: flex;
+      width: 100vw;
+      justify-content: space-around;
+      height: 12vh;
+      padding: 5px;
+      background: url('../images/logo.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 1;
 
-.divTable{
-    margin-top:50px;
-    margin-left:50px;
-   display: table;
-   width: 80%;
-   top:240px;
-   .judson-serif;
-   font-size: @textSize-ll;
-   background:rgba(65,75,195,.5);
-   margin-bottom:50px;
+      @media @phone {
+         display: block;
+      }
+
+      #upcomming-header {
+         color: @rgba-complement-1;
+         text-shadow: @text-shadow-d;
+         font-size: 3.5rem;
+
+      }
+
+      .but {
+         height: 10vh;
+         border-radius: 1px;
+         width: 10vw;
+         padding: 5px;
+         padding: 0;
+         transition: all .25s ease-in-out;
+         background: @btn-color;
+         .archivo(@rgba-primary-1);
+         font-size: @textSize-l;
+        
+         @media @mobile {
+            width: 100vw;
+            height: 6vh;
+            color: @rgba-complement-1;
+            text-shadow: @text-shadow-d;
+         }
+      }
+      .but:hover{
+         transition:all .45s ease-in-out;
+         transform:scale(1.02);
+         border:2px ridge white;
+         box-shadow: inset black 2px 2px 50px 2px;
+         color:antiquewhite;
+      }
+   }
+ 
+
+   .divTable {
+      margin-top: 50px;
+      margin-left: 10%;
+      display: table;
+      width: 80%;
+      top: 240px;
+      .judson-serif;
+      font-size: @textSize-ll;
+      background: rgba(65, 75, 195, .2);
+      margin-bottom: 50px;
+   }
+
+   .divTableRow {
+      display: table-row;
+      height: 7vh;
+   }
+
+   td,
+   th {
+      text-align: center;
+      border: 5px solid rgba(0, 0, 0, .25);
+      padding: 1.5rem;
+   }
 }
-.divTableRow {
-   display: table-row;
-   height:7vh;
-} 
-td, th {
-   text-align: center;
-   border: 5px solid rgba(0,0,0,.25);
-   padding: 1.5rem;
- }
-}
-
-
