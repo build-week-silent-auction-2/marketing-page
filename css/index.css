@@ -192,6 +192,11 @@ button {
   font-weight: bold;
   color: #1e27ac;
 }
+@media (max-width: 800px) {
+  .container h1 {
+    font-size: 6rem;
+  }
+}
 @media (max-width: 500px) {
   .container h1 {
     font-size: 5rem;
@@ -218,6 +223,17 @@ button {
   color: black;
   border: 1px solid black;
   transition: all 0.75s ease-in-out;
+}
+@media (max-width: 800px) {
+  .container nav a {
+    flex-direction: column;
+    width: 96vw;
+    padding-bottom: 2vh;
+    margin-bottom: 2vh;
+    justify-content: center;
+    margin: 2.5%;
+    font-size: 2rem;
+  }
 }
 @media (max-width: 500px) {
   .container nav a {
