@@ -98,7 +98,7 @@ body{
         height:90%;
         display: flex;
         flex-direction: column;
-        margin-top:3%;
+        margin-top:1%;
         justify-content: flex-start;
         background-size:contain;
         align-self:center;
@@ -249,13 +249,15 @@ body{
     }// this closes main-content class this is what boxes in the bid items 
 
     .footer {
-        position: relative;
-
-        // bottom:0;
-        margin:5%;
-        width:100%;
-        height:5vh;
-        background:@rgba-primary-2;;
+        position:fixed;
+        height:20vh;
+        bottom:0;
+        width:95vw;
+        height:15vh;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background:@rgba-primary-1;
+        border:4px outset @rgba-primary-3;
     }
 }
 
@@ -287,7 +289,7 @@ body{
 //featured Items change 
 #featured{
     position:absolute;
-    margin-top:15vh;
+    margin-top:12vh;
     width:50vw;
     min-width:50vw;
     text-align: center;

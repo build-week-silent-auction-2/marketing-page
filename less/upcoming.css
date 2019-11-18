@@ -376,9 +376,21 @@ body .divTable {
   background: rgba(205, 205, 215, 0.7);
   margin-bottom: 50px;
 }
+@media (max-width: 500px) {
+  body .divTable {
+    margin: 0;
+    width: 95vw;
+  }
+}
 body .divTableRow {
   display: table-row;
   height: 7vh;
+}
+@media (max-width: 500px) {
+  body .divTableRow {
+    margin: 0;
+    height: 5vh;
+  }
 }
 body td,
 body th {

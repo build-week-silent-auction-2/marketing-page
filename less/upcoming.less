@@ -76,11 +76,19 @@ body {
       font-size: @textSize-ll;
       background:rgba(205, 205, 215, .7);
       margin-bottom: 50px;
+      @media @phone{
+         margin:0;
+         width:95vw;
+      }
    }
 
    .divTableRow {
       display: table-row;
       height: 7vh;
+      @media @phone{
+         margin:0;
+         height:5vh;
+      }
    }
 
    td,

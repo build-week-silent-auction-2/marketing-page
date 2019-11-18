@@ -27,3 +27,25 @@ button {
 a {
   color: #e3c6d2;
 }
+.icons {
+  display: flex;
+  width: 50vw;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .icons {
+    width: 95vw;
+  }
+}
+.icons li > a > img {
+  margin: auto 5px auto 5px;
+  box-shadow: none;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+.icons li > a > img:hover {
+  transform: scale(1.02);
+  border: 3px inset white;
+  box-shadow: blue 3px 3px 80px 3px;
+  transition: all 0.5s ease-in-out;
+}
