@@ -320,7 +320,15 @@ body .con-h {
 }
 @media (max-width: 500px) {
   body .con-h {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 60vh;
+    background: url('../images/logo.png');
+    background-size: cover;
+    background-position: 0px 0px ;
+    background-repeat: no-repeat;
+    z-index: 15;
   }
 }
 body .con-h #upcomming-header {
@@ -343,7 +351,7 @@ body .con-h .but {
 @media (max-width: 500px) {
   body .con-h .but {
     width: 100vw;
-    height: 6vh;
+    height: 16vh;
     color: #e3c6d2;
     text-shadow: 0.25px 0.25px 0px rgba(114, 100, 106, 0.68), -0.25px 0px 0.5px rgba(114, 100, 106, 0.68);
   }

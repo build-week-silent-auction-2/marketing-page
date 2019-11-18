@@ -47,7 +47,7 @@ html {
 @media (max-width: 500px) {
   .c-container nav .nav-link {
     font-size: 3rem;
-    margin: auto;
+    margin: auto 25px auto 5px;
     width: 95vw;
   }
 }
@@ -106,19 +106,21 @@ html {
   width: 45vw;
   margin: 2%;
   padding: 0% 2% 2% 2%;
+  transition: all 0.5s ease-in-out;
 }
 .main-con .meet-me:hover {
   background-color: white;
   opacity: 1;
+  transition: all 0.5s ease-in-out;
 }
 @media (max-width: 1000px) and (min-width: 500px) {
   .main-con .meet-me {
     flex-direction: column;
     width: 96vw;
     padding-bottom: 2vh;
-    margin-bottom: 2vh;
     justify-content: center;
     margin: 2.5%;
+    margin: auto 25px 20px 5px;
   }
 }
 @media (max-width: 500px) {
@@ -127,7 +129,7 @@ html {
     padding-bottom: 2vh;
     margin-bottom: 2vh;
     justify-content: center;
-    margin: 2.5%;
+    margin: auto 25px 10px 5px;
   }
 }
 .main-con .meet-me h3 {

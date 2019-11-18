@@ -17,7 +17,18 @@ body {
       z-index: 1;
 
       @media @phone {
-         display: block;
+ 
+         display:flex;
+         flex-direction:column;
+         width:100vw;
+         height:60vh;
+
+        
+         background:url('../images/logo.png'); 
+         background-size:cover;
+         background-position:0px 0px ; 
+         background-repeat:no-repeat; 
+         z-index:15;
       }
 
       #upcomming-header {
@@ -40,7 +51,7 @@ body {
         
          @media @mobile {
             width: 100vw;
-            height: 6vh;
+            height: 16vh;
             color: @rgba-complement-1;
             text-shadow: @text-shadow-d;
          }
@@ -63,7 +74,7 @@ body {
       top: 240px;
       .judson-serif;
       font-size: @textSize-ll;
-      background: rgba(205, 205, 215, .7);
+      background:rgba(205, 205, 215, .7);
       margin-bottom: 50px;
    }
 

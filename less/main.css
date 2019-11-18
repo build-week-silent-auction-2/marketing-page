@@ -34,7 +34,7 @@
   font-weight: bold;
   color: #1e27ac;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) and (min-width: 500px) {
   .container h1 {
     font-size: 6rem;
   }
@@ -46,6 +46,12 @@
 }
 .container nav {
   display: flex;
+}
+@media (max-width: 1000px) and (min-width: 500px) {
+  .container nav {
+    display: block;
+    padding: 10px;
+  }
 }
 @media (max-width: 500px) {
   .container nav {
@@ -67,7 +73,7 @@
   border: 1px solid black;
   transition: all 0.75s ease-in-out;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) and (min-width: 500px) {
   .container nav a {
     flex-direction: column;
     width: 96vw;
@@ -78,10 +84,14 @@
     font-size: 2rem;
   }
 }
+@media (max-width: 1000px) and (min-width: 500px) {
+  .container nav a {
+    margin: auto 25px auto 10px;
+  }
+}
 @media (max-width: 500px) {
   .container nav a {
     font-size: 3rem;
-    margin: auto;
     width: 95vw;
   }
 }
