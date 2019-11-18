@@ -9,7 +9,6 @@ function makeTable(container, data) {
     });
     return container.append(table);
 }
-// let inp = $('input').attr('type','text','placeholder','X');
 let inp = document.createElement('input');
 $(document).ready(function() {
     var data = [["Date", "Time", "Charitable?"], //headers
@@ -23,6 +22,6 @@ $(document).ready(function() {
                 ["12/17/19 ", " 2:00pm ", "X"],
                 ["12/20/19 ", " 11:00am ", "_"],
                 ["12/21/19 ", " 2:30pm ", "X"]];
-    var cityTable = makeTable($(document.body), data);
+    let listings = makeTable($(document.body), data);
 });
 

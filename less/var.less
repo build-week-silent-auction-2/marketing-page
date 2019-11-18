@@ -2,7 +2,7 @@
 
 
 @rgba-primary-0: rgba( 84,102,127,1);	/* Main Primary color */
-@rgba-primary-1: rgba(164,173,186,1);
+@rgba-primary-1: rgba(164,173,186,.78);
 @rgba-primary-2: rgba(118,132,152,1);
 @rgba-primary-3: rgba( 59, 78,107,.5);
 @rgba-primary-4: rgba( 37, 57, 86,1);
@@ -14,14 +14,15 @@
 @rgba-complement-4: rgba(114, 100, 106, 0.68);
 
 
-
+ 
 @bg-main:@rgba-primary-4;
 @btn-color:@rgba-complement-2;
-@panel-color:@rgba-complement-4;
+@panel-color:rgba(0,0,0,.75);
 @mobile: ~"(max-width: 500px)";
 
-@text-shadow:2px 1px 2px black;
+@text-shadow:.15px 1px .1px whit;
 @text-shadow-l:.25px .25px 0px white, -.25px 0px .5px white;
+@text-shadow-d:.25px .25px 0px @rgba-complement-4, -.25px 0px .5px @rgba-complement-4;
 @box-shadow:2px 1px 1px 2px black, -2px -1px 1px -2px gray;
 @bg: rgba(164,173,186,1);
 @large-txt: rgb(30, 39, 172);
@@ -29,7 +30,7 @@
 
 
 @phone: ~'(max-width: 500px)';
-@tablet: ~'(max-width: 800px)';
+@tablet: ~'(max-width: 1000px) and (min-width: 500px)';
 
 
 
@@ -55,7 +56,7 @@
    color:@color;
 }
 
-@mobile: ~"(max-width: 500px)";
+
 
 
 

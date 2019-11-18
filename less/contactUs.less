@@ -24,23 +24,24 @@ html{
             
         }
         
-        a {
+        .nav-link {
             display: flex;
             margin: 1.5%;
-            width: 40vw;
+            width: 20vw;
             height: 10vh;
             text-decoration: none;
             justify-content: space-around;
             font-size: 3rem;
             background-color: rgba(255, 255, 255, 0.45);
-            align-items: center;
+            // align-items: center;
             color:black;
             border: 1px solid black;
             transition:all .75s ease-in-out;
+
             // opacity: .65;
             @media @phone {
                 font-size: 3rem;
-                margin: auto;
+                margin:auto 25px auto 5px;
                 width: 95vw;
                 
             }
@@ -98,19 +99,22 @@ html{
         background-color: @bg;
         border: 1px solid black;
         width: 45vw;
-        margin: 2%;
+        margin: 1%;
         padding: 0% 2% 2% 2%;
+        transition:all .5s ease-in-out;
         &:hover{
             background-color: white;
             opacity: 1;
+            transition:all .5s ease-in-out;
         }
         @media @tablet {
             flex-direction: column;
             width: 96vw;
             padding-bottom: 2vh;
-            margin-bottom: 2vh;
+          
             justify-content: center;
             margin: 2.5%;
+            margin:auto 25px 20px 5px;
             
         }
         @media @mobile{
@@ -118,7 +122,7 @@ html{
             padding-bottom: 2vh;
             margin-bottom: 2vh;
             justify-content: center;
-            margin: 2.5%;
+            margin:auto 25px 10px 5px;
         }
        
    
@@ -140,5 +144,5 @@ html{
             font-size: 1.5rem;
         }
     }
+    
 }
-

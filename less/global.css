@@ -3,7 +3,7 @@
 .judson-serif {
   font-family: 'Judson', serif;
   color: black;
-  text-shadow: 2px 1px 2px black;
+  text-shadow: 0.15px 1px 0.1px whit;
 }
 .mon-serif {
   font-family: 'Montserrat', sans-serif;
@@ -21,6 +21,32 @@ body {
 }
 button {
   padding: 5px;
-  text-shadow: 2px 1px 2px black;
+  text-shadow: 0.15px 1px 0.1px whit;
   font-size: 1.3rem;
+}
+a {
+  color: #e3c6d2;
+}
+.icons {
+  display: flex;
+  width: 50vw;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .icons {
+    width: 95vw;
+  }
+}
+.icons li > a > img {
+  transform: scale(1);
+  margin: auto 5px auto 5px;
+  box-shadow: none;
+  border-radius: 5px;
+  border: 1px inset white;
+  transition: all 0.5s ease-in-out;
+}
+.icons li > a > img:hover {
+  transform: scale(1.09);
+  box-shadow: white 3px 3px 40px 3px;
+  transition: all 0.75s ease-in-out;
 }

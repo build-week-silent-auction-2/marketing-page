@@ -3,7 +3,7 @@
 .judson-serif {
   font-family: 'Judson', serif;
   color: black;
-  text-shadow: 2px 1px 2px black;
+  text-shadow: 0.15px 1px 0.1px whit;
 }
 .mon-serif {
   font-family: 'Montserrat', sans-serif;
@@ -14,6 +14,8 @@
 }
 .container {
   position: absolute;
+  top: 12vh;
+  margin-top: 0;
   width: 100vw;
   height: 100%;
   display: flex;
@@ -21,16 +23,18 @@
   justify-content: center;
   align-items: center;
   background-image: url("https://cdn.discordapp.com/attachments/644333219512188928/644357514607067156/auction-image.png");
+  z-index: 0;
 }
 .container h1 {
   display: flex;
   font-size: 9rem;
+  margin-bottom: 8vh;
   justify-content: center;
   padding-bottom: 10vh;
   font-weight: bold;
   color: #1e27ac;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) and (min-width: 500px) {
   .container h1 {
     font-size: 6rem;
   }
@@ -43,6 +47,12 @@
 .container nav {
   display: flex;
 }
+@media (max-width: 1000px) and (min-width: 500px) {
+  .container nav {
+    display: block;
+    padding: 10px;
+  }
+}
 @media (max-width: 500px) {
   .container nav {
     flex-direction: column;
@@ -51,6 +61,7 @@
 .container nav a {
   display: flex;
   margin: 2%;
+  margin-bottom: 8vh;
   width: 22vw;
   height: 20vh;
   text-decoration: none;
@@ -62,7 +73,7 @@
   border: 1px solid black;
   transition: all 0.75s ease-in-out;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) and (min-width: 500px) {
   .container nav a {
     flex-direction: column;
     width: 96vw;
@@ -73,10 +84,14 @@
     font-size: 2rem;
   }
 }
+@media (max-width: 1000px) and (min-width: 500px) {
+  .container nav a {
+    margin: auto 25px auto 10px;
+  }
+}
 @media (max-width: 500px) {
   .container nav a {
     font-size: 3rem;
-    margin: auto;
     width: 95vw;
   }
 }
