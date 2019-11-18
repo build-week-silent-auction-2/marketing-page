@@ -172,16 +172,17 @@ a {
   }
 }
 .icons li > a > img {
+  transform: scale(1);
   margin: auto 5px auto 5px;
   box-shadow: none;
   border-radius: 5px;
+  border: 1px inset white;
   transition: all 0.5s ease-in-out;
 }
 .icons li > a > img:hover {
-  transform: scale(1.02);
-  border: 3px inset white;
-  box-shadow: blue 3px 3px 80px 3px;
-  transition: all 0.5s ease-in-out;
+  transform: scale(1.09);
+  box-shadow: white 3px 3px 40px 3px;
+  transition: all 0.75s ease-in-out;
 }
 * {
   box-sizing: border-box;
@@ -531,10 +532,10 @@ body .main .main-content .line-1 {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   align-content: stretch;
-  grid-gap: 25px;
+  grid-gap: 15px;
   overflow-x: scroll;
   background-size: 800px 400px;
-  background: rgba(59, 78, 107, 0.5);
+  background: #768498;
 }
 @media (max-width: 500px) {
   body .main .main-content .line-1 {
@@ -553,11 +554,10 @@ body .main .main-content .line-1 .panels {
   border-radius: 2px;
   border: 4px ridge #768498;
   padding: 5px;
-  background: rgba(114, 100, 106, 0.68);
+  background: rgba(0, 0, 0, 0.75);
   transition: all 0.35s ease-in-out;
   background-size: cover;
   background-repeat: no-repeat;
-  background: url(../images/gavelSmall.png);
 }
 @media (max-width: 500px) {
   body .main .main-content .line-1 .panels {
@@ -565,24 +565,22 @@ body .main .main-content .line-1 .panels {
     width: 90vw;
     min-height: 50vh;
     max-height: 50vh;
-    margin: 10px 20px 20px 20px;
+    margin: 10px 20px 40px 20px;
     padding: 5px;
   }
 }
 body .main .main-content .line-1 .panels img {
   left: 0;
   position: relative;
-  min-width: 12vw;
-  min-height: 15vh;
+  min-width: 10vw;
+  min-height: 13vh;
   margin: 5px 5px 0px 15px;
 }
 @media (max-width: 500px) {
   body .main .main-content .line-1 .panels img {
-    width: 80%;
-    margin: 20px;
-    min-height: 40vh;
-    height: 80%;
-    max-height: 80%;
+    width: 60%;
+    margin: 50px;
+    height: 70%;
   }
 }
 body .main .main-content .line-1 .panels .items {
@@ -656,7 +654,7 @@ body .main .footer {
   height: 15vh;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  background: #a4adba;
+  background: rgba(164, 173, 186, 0.78);
   border: 4px outset rgba(59, 78, 107, 0.5);
 }
 body .details {
@@ -757,7 +755,7 @@ body .con-h .but {
   transition: all 0.25s ease-in-out;
   background: rgba(87, 82, 84, 0.59);
   font-family: 'Archivo Black', sans-serif;
-  color: #a4adba;
+  color: rgba(164, 173, 186, 0.78);
   font-size: 1.9rem;
 }
 @media (max-width: 500px) {
