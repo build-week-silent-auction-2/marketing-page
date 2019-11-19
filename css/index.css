@@ -223,6 +223,7 @@ a {
   .container h1 {
     font-size: 5rem;
     padding-bottom: 5vh;
+    display: none;
   }
 }
 .container nav {
@@ -251,7 +252,7 @@ a {
 @media (max-width: 1000px) and (min-width: 500px) {
   .container nav a {
     flex-direction: column;
-    width: 96vw;
+    width: 30vw;
     padding-bottom: 2vh;
     margin-bottom: 2vh;
     justify-content: center;
@@ -263,7 +264,7 @@ a {
   .container nav a {
     font-size: 3rem;
     margin: auto;
-    width: 95vw;
+    width: 87vw;
     margin-bottom: 3vh;
   }
 }
