@@ -28,3 +28,15 @@ det.on('click', function (e) {//removes the large image
     $(".details img:last-child").remove();
     det.toggle('slow');
 })
+
+
+// let tooltips = document.querySelectorAll('.tooltip');
+
+// window.onmousemove = function (e) {
+//     let x = (e.clientX + 20) + 'px',
+//         y = (e.clientY + 20) + 'px';
+//     for (let i = 0; i < tooltips.length; i++) {
+//         tooltips[i].style.top = y;
+//         tooltips[i].style.left = x;
+//     }
+// };
