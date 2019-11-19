@@ -328,6 +328,7 @@ body.contact-bod .c-container nav .nav-link {
   color: black;
   border: 1px solid black;
   transition: all 0.75s ease-in-out;
+  box-shadow: 3px 9px 15px #000;
 }
 @media (max-width: 500px) {
   body.contact-bod .c-container nav .nav-link {
@@ -369,6 +370,7 @@ body.contact-bod .main-con h2 {
   width: 100vw;
   font-size: 7rem;
   font-weight: bold;
+  text-shadow: 3px 3px 50px black;
   margin: 2%;
 }
 @media (max-width: 1000px) and (min-width: 500px) {
@@ -392,6 +394,7 @@ body.contact-bod .main-con .meet-me {
   margin: 1%;
   padding: 0% 2% 2% 2%;
   transition: all 0.5s ease-in-out;
+  box-shadow: 3px 9px 15px #000;
 }
 body.contact-bod .main-con .meet-me:hover {
   background-color: white;
