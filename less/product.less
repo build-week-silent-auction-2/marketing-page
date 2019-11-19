@@ -126,11 +126,15 @@ body{
             grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr;
             align-content: stretch;
-            grid-gap:15px;
+            grid-gap:10px;
             overflow-x:scroll;
             background-size:800px 400px;
             background:@rgba-primary-2;
 
+            @media @tablet{
+                overflow-x:scroll;
+                margin-bottom:15px;
+            }
             @media @phone{
                 width:90vw;
                 padding-top:150px;
@@ -155,7 +159,15 @@ body{
             transition:all .35s ease-in-out;
             background-size:cover;
             background-repeat:no-repeat;
-          
+
+            @media @tablet{
+              
+                height:200px;
+                width:200px;
+                margin:10px 20px 40px 20px;
+                padding:2px;
+
+            } 
 
             @media @phone{
                 display:block;
@@ -258,8 +270,82 @@ body{
         border-top-right-radius: 5px;
         background:@rgba-primary-1;
         border:4px outset @rgba-primary-3;
+
+        @media @tablet{
+            display:none;
+        }
+        .adds{
+            display:flex;
+            justify-content:space-around;
+
+          
+
+        }
+
+
     }
 }
+
+.add-img{
+    margin-top:5px;
+    transition:all .15s ease-in-out;
+    animation:pulse 2s infinite;
+    
+    &:hover{
+        transform:scale(1.4);
+    }
+}
+
+.add-img2{
+    margin-top:5px;
+    transition:all .15s ease-in-out;
+    animation:pulse2 2s infinite;
+    
+    &:hover{
+        transform:scale(2.4); 
+    }
+}
+
+@keyframes pulse {
+    0% {
+        border:4px dashed yellow;
+    }
+    50% {
+        border:2px dashed black;
+    }
+
+    100% {
+        border:2px dashed red;
+    }
+  }
+
+  @keyframes pulse2 {
+    0% {
+        border:2px dashed black;
+        transform:rotate(0deg)
+    }
+
+    20%{
+        transform:rotate(20deg)
+    }
+    40% {
+       
+        border:4px dashed yellow;
+    }
+
+    60%{
+        transform:rotate(0deg)
+    }
+
+    80%{
+        transform:rotate(-20deg)
+    }
+
+    100% {
+        border:2px dashed red;
+        transform:rotate(0deg)
+    }
+  }
 
 .details{
     display:none;
