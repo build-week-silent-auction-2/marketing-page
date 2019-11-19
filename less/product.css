@@ -128,6 +128,11 @@ body .main .main-content .line-1 {
   background-size: 800px 400px;
   background: #768498;
 }
+@media (max-width: 1000px) and (min-width: 500px) {
+  body .main .main-content .line-1 {
+    overflow-x: scroll;
+  }
+}
 @media (max-width: 500px) {
   body .main .main-content .line-1 {
     width: 90vw;
@@ -149,6 +154,14 @@ body .main .main-content .line-1 .panels {
   transition: all 0.35s ease-in-out;
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media (max-width: 1000px) and (min-width: 500px) {
+  body .main .main-content .line-1 .panels {
+    height: 200px;
+    width: 200px;
+    margin: 10px 20px 40px 20px;
+    padding: 5px;
+  }
 }
 @media (max-width: 500px) {
   body .main .main-content .line-1 .panels {
@@ -247,6 +260,11 @@ body .main .footer {
   border-top-right-radius: 5px;
   background: rgba(164, 173, 186, 0.78);
   border: 4px outset rgba(59, 78, 107, 0.5);
+}
+@media (max-width: 1000px) and (min-width: 500px) {
+  body .main .footer {
+    display: none;
+  }
 }
 body .details {
   display: none;
