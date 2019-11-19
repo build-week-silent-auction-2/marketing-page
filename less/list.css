@@ -1,0 +1,113 @@
+/* Main Primary color */
+/* Main Complement color */
+.judson-serif {
+  font-family: 'Judson', serif;
+  color: black;
+  text-shadow: 0.15px 1px 0.1px whit;
+}
+.mon-serif {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+#list {
+  background: #eee;
+  color: #555;
+  font: 83% Georgia, Times New Roman, serif;
+  text-align: center;
+  line-height: 1.8em;
+  box-shadow: 3px 3px 15px #aaa;
+  padding: 2%;
+  display: block;
+}
+@media (max-width: 500px) {
+  #list {
+    padding: 0;
+  }
+}
+.x {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 3rem;
+  border: 2px ridge black;
+  padding: 15px;
+}
+#wrap {
+  width: 40vw;
+  max-width: 80vw;
+  margin: 5% auto 2% auto;
+  background: #fff;
+  box-shadow: 3px 3px 15px #aaa;
+  display: flex;
+}
+@media (max-width: 1000px) and (min-width: 500px) {
+  #wrap {
+    width: 60vw;
+  }
+}
+@media (max-width: 500px) {
+  #wrap {
+    width: 100%;
+    display: block;
+    padding: 0;
+  }
+}
+#wrap #content {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  text-align: left;
+  align-items: center;
+}
+#wrap #content input {
+  margin-left: 15%;
+}
+#wrap #content #footer {
+  width: 590px;
+  color: #aaa;
+  font-size: 0.8em;
+  margin: 20px auto;
+  text-align: right;
+}
+#wrap #content #footer a {
+  color: #aaa;
+}
+#wrap #content h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px #bbb;
+}
+#wrap #content h2 {
+  font-size: 1.6em;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px #bbb;
+}
+#wrap #content h2.slogan {
+  color: #777;
+  text-shadow: 2px 2px 4px #ccc;
+}
+#wrap #content a {
+  color: #b75858;
+  text-decoration: none;
+}
+#wrap #content a:hover {
+  color: #872828;
+}
+#wrap #content p {
+  padding: 0 0 15px;
+}
+#wrap #content dl {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.4em;
+}
+#wrap #content dt {
+  width: 100%;
+  text-align: left;
+  color: #444;
+}
+#wrap #content dd {
+  margin: 0 0 0 0px;
+  padding: 0 0 5px 0;
+  text-align: left;
+}
