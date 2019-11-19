@@ -431,7 +431,7 @@ body .main-content .meet-me p {
   float: left;
   overflow-wrap: break-word;
   padding-left: 0%;
-  margin-left: 0%;
+  margin-left: 0.5%;
   margin-top: 2%;
 }
 body .main {
