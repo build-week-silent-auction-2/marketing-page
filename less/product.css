@@ -267,6 +267,48 @@ body .main .footer {
     display: none;
   }
 }
+body .main .footer .adds {
+  display: flex;
+  justify-content: space-around;
+}
+body .main .footer .adds .add-img {
+  margin-top: 5px;
+  transition: all 0.15s ease-in-out;
+  animation: pulse 2s infinite;
+}
+body .main .footer .adds .add-img:hover {
+  transform: scale(1.4) rotateX(15deg);
+}
+body .main .footer .adds .add-img2 {
+  margin-top: 5px;
+  transition: all 0.15s ease-in-out;
+  animation: pulse2 2s infinite;
+}
+body .main .footer .adds .add-img2:hover {
+  transform: scale(1.4) rotateX(15deg);
+}
+@keyframes pulse {
+  0% {
+    border: 4px dashed yellow;
+  }
+  50% {
+    border: 2px dashed black;
+  }
+  100% {
+    border: 2px dashed red;
+  }
+}
+@keyframes pulse2 {
+  0% {
+    border: 2px dashed black;
+  }
+  50% {
+    border: 4px dashed yellow;
+  }
+  100% {
+    border: 2px dashed red;
+  }
+}
 body .details {
   display: none;
   position: absolute;

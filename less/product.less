@@ -274,8 +274,62 @@ body{
         @media @tablet{
             display:none;
         }
+        .adds{
+            display:flex;
+            justify-content:space-around;
+
+            .add-img{
+                margin-top:5px;
+                transition:all .15s ease-in-out;
+                animation:pulse 2s infinite;
+                
+                &:hover{
+                    transform:scale(1.4) rotateX(15deg);
+                }
+            }
+
+            .add-img2{
+                margin-top:5px;
+                transition:all .15s ease-in-out;
+                animation:pulse2 2s infinite;
+                
+                &:hover{
+                    transform:scale(1.4) rotateX(15deg);
+                }
+            }
+
+        }
+
+
     }
 }
+
+@keyframes pulse {
+    0% {
+        border:4px dashed yellow;
+    }
+    50% {
+        border:2px dashed black;
+    }
+
+    100% {
+        border:2px dashed red;
+    }
+  }
+
+  @keyframes pulse2 {
+    0% {
+        border:2px dashed black;
+    }
+    50% {
+       
+        border:4px dashed yellow;
+    }
+
+    100% {
+        border:2px dashed red;
+    }
+  }
 
 .details{
     display:none;
