@@ -680,21 +680,21 @@ body .main .footer .adds {
   display: flex;
   justify-content: space-around;
 }
-body .main .footer .adds .add-img {
+body .add-img {
   margin-top: 5px;
   transition: all 0.15s ease-in-out;
   animation: pulse 2s infinite;
 }
-body .main .footer .adds .add-img:hover {
-  transform: scale(1.4) rotateX(15deg);
+body .add-img:hover {
+  transform: scale(1.4);
 }
-body .main .footer .adds .add-img2 {
+body .add-img2 {
   margin-top: 5px;
   transition: all 0.15s ease-in-out;
   animation: pulse2 2s infinite;
 }
-body .main .footer .adds .add-img2:hover {
-  transform: scale(2.4) rotateX(15deg);
+body .add-img2:hover {
+  transform: scale(2.4);
 }
 @keyframes pulse {
   0% {
