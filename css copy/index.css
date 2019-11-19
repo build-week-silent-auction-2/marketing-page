@@ -9,14 +9,6 @@
   font-family: 'Montserrat', sans-serif;
   color: black;
 }
-.prevent-text-breakouts {
-  -ms-word-break: break-all;
-  word-break: break-all;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -197,6 +189,8 @@ a {
 }
 .container {
   position: absolute;
+  top: 12vh;
+  margin-top: 0;
   width: 100vw;
   height: 100%;
   display: flex;
@@ -204,10 +198,12 @@ a {
   justify-content: center;
   align-items: center;
   background-image: url("https://cdn.discordapp.com/attachments/644333219512188928/644357514607067156/auction-image.png");
+  z-index: 0;
 }
 .container h1 {
   display: flex;
   font-size: 9rem;
+  margin-bottom: 8vh;
   justify-content: center;
   padding-bottom: 10vh;
   font-weight: bold;
@@ -216,28 +212,31 @@ a {
 @media (max-width: 1000px) and (min-width: 500px) {
   .container h1 {
     font-size: 6rem;
-    padding-bottom: 5vh;
   }
 }
 @media (max-width: 500px) {
   .container h1 {
     font-size: 5rem;
-    padding-bottom: 5vh;
-    display: none;
   }
 }
 .container nav {
   display: flex;
 }
+@media (max-width: 1000px) and (min-width: 500px) {
+  .container nav {
+    display: block;
+    padding: 10px;
+  }
+}
 @media (max-width: 500px) {
   .container nav {
     flex-direction: column;
-    margin: auto;
   }
 }
 .container nav a {
   display: flex;
   margin: 2%;
+  margin-bottom: 8vh;
   width: 22vw;
   height: 20vh;
   text-decoration: none;
@@ -252,7 +251,7 @@ a {
 @media (max-width: 1000px) and (min-width: 500px) {
   .container nav a {
     flex-direction: column;
-    width: 30vw;
+    width: 96vw;
     padding-bottom: 2vh;
     margin-bottom: 2vh;
     justify-content: center;
@@ -260,12 +259,15 @@ a {
     font-size: 2rem;
   }
 }
+@media (max-width: 1000px) and (min-width: 500px) {
+  .container nav a {
+    margin: auto 25px auto 10px;
+  }
+}
 @media (max-width: 500px) {
   .container nav a {
     font-size: 3rem;
-    margin: auto;
-    width: 87vw;
-    margin-bottom: 3vh;
+    width: 95vw;
   }
 }
 .container nav a:hover {
@@ -283,53 +285,42 @@ html {
   font-size: 62.5%;
   background-image: url("https://cdn.discordapp.com/attachments/644333219512188928/644357514607067156/auction-image.png");
 }
-body {
-  overflow-y: scroll;
-}
-body .c-container {
-  width: 99vw;
+.c-container {
+  width: 100vw;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: auto;
 }
-@media (max-width: 500px) {
-  body .c-container {
-    margin-top: 1vh;
-  }
-}
-body .c-container nav {
+.c-container nav {
   display: flex;
 }
 @media (max-width: 500px) {
-  body .c-container nav {
+  .c-container nav {
     flex-direction: column;
   }
 }
-body .c-container nav a {
+.c-container nav .nav-link {
   display: flex;
-  margin: 1% 2%;
-  width: 33vw;
+  margin: 1.5%;
+  width: 20vw;
   height: 10vh;
   text-decoration: none;
   justify-content: space-around;
   font-size: 3rem;
   background-color: rgba(255, 255, 255, 0.45);
-  align-items: center;
   color: black;
   border: 1px solid black;
   transition: all 0.75s ease-in-out;
 }
 @media (max-width: 500px) {
-  body .c-container nav a {
+  .c-container nav .nav-link {
     font-size: 3rem;
-    margin: auto;
+    margin: auto 25px auto 5px;
     width: 95vw;
-    margin-bottom: 2vh;
   }
 }
-body .c-container nav a:hover {
+.c-container nav .nav-link:hover {
   background-color: rgba(0, 0, 0, 0.75);
   color: whitesmoke;
   opacity: 1;
@@ -337,26 +328,25 @@ body .c-container nav a:hover {
   transition: all 0.5s ease-in-out;
   border: 4px ridge white;
 }
-body .main-content {
+.main-con {
   display: flex;
   margin: auto;
   flex-wrap: wrap;
   justify-content: space-around;
-  overflow-wrap: break-word;
 }
 @media (max-width: 500px) {
-  body .main-content {
+  .main-con {
     flex-direction: column;
     width: 100vw;
   }
 }
 @media (max-width: 1000px) and (min-width: 500px) {
-  body .main-content {
+  .main-con {
     flex-direction: column;
     width: 100vw;
   }
 }
-body .main-content h2 {
+.main-con h2 {
   display: flex;
   margin: auto;
   justify-content: center;
@@ -366,53 +356,52 @@ body .main-content h2 {
   margin: 2%;
 }
 @media (max-width: 1000px) and (min-width: 500px) {
-  body .main-content h2 {
+  .main-con h2 {
     font-size: 6rem;
   }
 }
 @media (max-width: 500px) {
-  body .main-content h2 {
+  .main-con h2 {
     font-size: 5rem;
     width: 95vw;
   }
 }
-body .main-content .meet-me {
+.main-con .meet-me {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   background-color: #a4adba;
   border: 1px solid black;
   width: 45vw;
-  margin: 2%;
-  float: left;
-  overflow-wrap: break-word;
+  margin: 1%;
+  padding: 0% 2% 2% 2%;
+  transition: all 0.5s ease-in-out;
 }
-body .main-content .meet-me:hover {
+.main-con .meet-me:hover {
   background-color: white;
   opacity: 1;
-  transform: scale(1.05);
   transition: all 0.5s ease-in-out;
-  border: 4px ridge white;
 }
 @media (max-width: 1000px) and (min-width: 500px) {
-  body .main-content .meet-me {
+  .main-con .meet-me {
     flex-direction: column;
-    width: 93vw;
+    width: 96vw;
     padding-bottom: 2vh;
-    margin-bottom: 2vh;
     justify-content: center;
+    margin: 2.5%;
+    margin: auto 25px 20px 5px;
   }
 }
 @media (max-width: 500px) {
-  body .main-content .meet-me {
-    width: 91vw;
+  .main-con .meet-me {
+    width: 95vw;
     padding-bottom: 2vh;
     margin-bottom: 2vh;
     justify-content: center;
-    margin: 2.5%;
+    margin: auto 25px 10px 5px;
   }
 }
-body .main-content .meet-me h3 {
+.main-con .meet-me h3 {
   width: 100vw;
   text-align: center;
   font-weight: bold;
@@ -420,20 +409,14 @@ body .main-content .meet-me h3 {
   margin-bottom: 2%;
   margin-top: 1%;
 }
-body .main-content .meet-me h4 {
+.main-con .meet-me h4 {
   width: 100vw;
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2%;
 }
-body .main-content .meet-me p {
+.main-con .meet-me p {
   font-size: 1.5rem;
-  margin: auto;
-  float: left;
-  overflow-wrap: break-word;
-  padding-left: 0%;
-  margin-left: 0.5%;
-  margin-top: 2%;
 }
 body .main {
   position: absolute;

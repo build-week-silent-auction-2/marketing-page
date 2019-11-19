@@ -6,51 +6,44 @@ html{
     font-size: 62.5%;
     background-image: url("https://cdn.discordapp.com/attachments/644333219512188928/644357514607067156/auction-image.png");
 }
-
-   .contact-body{
-    overflow-y:scroll;
-    .c-container{
-        // position: absolute;
-        width: 99vw;
-        height:100%;
-        display: flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        margin: auto;
-        
-        @media @phone{
-            margin-top: 1vh;
-            
-        }
+body.contact-bod{
+.c-container{
+    // position: absolute;
+    width: 100vw;
+    height:100%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    
    
   
     nav{
         display: flex;
         @media @phone{
             flex-direction: column;
-           
             
         }
         
-        a {
+        .nav-link {
             display: flex;
-            margin: 1% 2%;
-            width: 33vw;
+            margin: 1.5%;
+            width: 20vw;
             height: 10vh;
             text-decoration: none;
             justify-content: space-around;
             font-size: 3rem;
             background-color: rgba(255, 255, 255, 0.45);
-            align-items: center;
+            // align-items: center;
             color:black;
             border: 1px solid black;
             transition:all .75s ease-in-out;
+
             // opacity: .65;
             @media @phone {
                 font-size: 3rem;
-                margin: auto;
+                margin:auto 25px auto 5px;
                 width: 95vw;
-                margin-bottom: 2vh;
+                
             }
 
             &:hover {
@@ -70,7 +63,7 @@ html{
     margin: auto;
     flex-wrap: wrap;
     justify-content: space-around;
-    overflow-wrap: break-word;
+   
     
     @media @mobile {
         flex-direction: column;
@@ -106,32 +99,30 @@ html{
         background-color: @bg;
         border: 1px solid black;
         width: 45vw;
-        margin: 2%;
-        // padding: 0% 2% 2% 2%;
-        float: left;
-        overflow-wrap: break-word;
+        margin: 1%;
+        padding: 0% 2% 2% 2%;
+        transition:all .5s ease-in-out;
         &:hover{
             background-color: white;
             opacity: 1;
-            transform:scale(1.05);
             transition:all .5s ease-in-out;
-            border:4px ridge white;
         }
         @media @tablet {
             flex-direction: column;
-            width: 93vw;
+            width: 96vw;
             padding-bottom: 2vh;
-            margin-bottom: 2vh;
+          
             justify-content: center;
-            
+            margin: 2.5%;
+            margin:auto 25px 20px 5px;
             
         }
         @media @mobile{
-            width: 91vw;
+            width: 95vw;
             padding-bottom: 2vh;
             margin-bottom: 2vh;
             justify-content: center;
-            margin: 2.5%;
+            margin:auto 25px 10px 5px;
         }
        
    
@@ -151,13 +142,8 @@ html{
         }
         p{
             font-size: 1.5rem;
-            margin: auto;
-            float: left;
-            overflow-wrap: break-word;
-            padding-left: 0%;
-            margin-left: 0.5%;
-            margin-top: 2%;
         }
     }
+    
 }
-   }
+}
