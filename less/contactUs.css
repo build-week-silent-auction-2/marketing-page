@@ -9,6 +9,14 @@
   font-family: 'Montserrat', sans-serif;
   color: black;
 }
+.prevent-text-breakouts {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
 * {
   box-sizing: border-box;
 }
@@ -16,42 +24,53 @@ html {
   font-size: 62.5%;
   background-image: url("https://cdn.discordapp.com/attachments/644333219512188928/644357514607067156/auction-image.png");
 }
-.c-container {
-  width: 100vw;
+.contact-body {
+  overflow-y: scroll;
+}
+.contact-body .c-container {
+  width: 99vw;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: auto;
 }
-.c-container nav {
+@media (max-width: 500px) {
+  .contact-body .c-container {
+    margin-top: 1vh;
+  }
+}
+.contact-body .c-container nav {
   display: flex;
 }
 @media (max-width: 500px) {
-  .c-container nav {
+  .contact-body .c-container nav {
     flex-direction: column;
   }
 }
-.c-container nav .nav-link {
+.contact-body .c-container nav a {
   display: flex;
-  margin: 1.5%;
-  width: 20vw;
+  margin: 1% 2%;
+  width: 33vw;
   height: 10vh;
   text-decoration: none;
   justify-content: space-around;
   font-size: 3rem;
   background-color: rgba(255, 255, 255, 0.45);
+  align-items: center;
   color: black;
   border: 1px solid black;
   transition: all 0.75s ease-in-out;
 }
 @media (max-width: 500px) {
-  .c-container nav .nav-link {
+  .contact-body .c-container nav a {
     font-size: 3rem;
-    margin: auto 25px auto 5px;
+    margin: auto;
     width: 95vw;
+    margin-bottom: 2vh;
   }
 }
-.c-container nav .nav-link:hover {
+.contact-body .c-container nav a:hover {
   background-color: rgba(0, 0, 0, 0.75);
   color: whitesmoke;
   opacity: 1;
@@ -59,25 +78,26 @@ html {
   transition: all 0.5s ease-in-out;
   border: 4px ridge white;
 }
-.main-con {
+.contact-body .main-con {
   display: flex;
   margin: auto;
   flex-wrap: wrap;
   justify-content: space-around;
+  overflow-wrap: break-word;
 }
 @media (max-width: 500px) {
-  .main-con {
+  .contact-body .main-con {
     flex-direction: column;
     width: 100vw;
   }
 }
 @media (max-width: 1000px) and (min-width: 500px) {
-  .main-con {
+  .contact-body .main-con {
     flex-direction: column;
     width: 100vw;
   }
 }
-.main-con h2 {
+.contact-body .main-con h2 {
   display: flex;
   margin: auto;
   justify-content: center;
@@ -87,52 +107,53 @@ html {
   margin: 2%;
 }
 @media (max-width: 1000px) and (min-width: 500px) {
-  .main-con h2 {
+  .contact-body .main-con h2 {
     font-size: 6rem;
   }
 }
 @media (max-width: 500px) {
-  .main-con h2 {
+  .contact-body .main-con h2 {
     font-size: 5rem;
     width: 95vw;
   }
 }
-.main-con .meet-me {
+.contact-body .main-con .meet-me {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   background-color: #a4adba;
   border: 1px solid black;
   width: 45vw;
-  margin: 1%;
-  padding: 0% 2% 2% 2%;
-  transition: all 0.5s ease-in-out;
+  margin: 2%;
+  float: left;
+  overflow-wrap: break-word;
 }
-.main-con .meet-me:hover {
+.contact-body .main-con .meet-me:hover {
   background-color: white;
   opacity: 1;
+  transform: scale(1.05);
   transition: all 0.5s ease-in-out;
+  border: 4px ridge white;
 }
 @media (max-width: 1000px) and (min-width: 500px) {
-  .main-con .meet-me {
+  .contact-body .main-con .meet-me {
     flex-direction: column;
-    width: 96vw;
-    padding-bottom: 2vh;
-    justify-content: center;
-    margin: 2.5%;
-    margin: auto 25px 20px 5px;
-  }
-}
-@media (max-width: 500px) {
-  .main-con .meet-me {
-    width: 95vw;
+    width: 93vw;
     padding-bottom: 2vh;
     margin-bottom: 2vh;
     justify-content: center;
-    margin: auto 25px 10px 5px;
   }
 }
-.main-con .meet-me h3 {
+@media (max-width: 500px) {
+  .contact-body .main-con .meet-me {
+    width: 91vw;
+    padding-bottom: 2vh;
+    margin-bottom: 2vh;
+    justify-content: center;
+    margin: 2.5%;
+  }
+}
+.contact-body .main-con .meet-me h3 {
   width: 100vw;
   text-align: center;
   font-weight: bold;
@@ -140,12 +161,18 @@ html {
   margin-bottom: 2%;
   margin-top: 1%;
 }
-.main-con .meet-me h4 {
+.contact-body .main-con .meet-me h4 {
   width: 100vw;
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2%;
 }
-.main-con .meet-me p {
+.contact-body .main-con .meet-me p {
   font-size: 1.5rem;
+  margin: auto;
+  float: left;
+  overflow-wrap: break-word;
+  padding-left: 0%;
+  margin-left: 0.5%;
+  margin-top: 2%;
 }
