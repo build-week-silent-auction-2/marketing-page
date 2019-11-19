@@ -210,6 +210,7 @@ button {
 @media (max-width: 500px) {
   .container nav {
     flex-direction: column;
+    margin: auto;
   }
 }
 .container nav a {
@@ -484,11 +485,12 @@ body {
   overflow-y: scroll;
 }
 body .c-container {
-  width: 100vw;
+  width: 99vw;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: auto;
 }
 @media (max-width: 500px) {
   body .c-container {
@@ -623,6 +625,7 @@ body .main-content .meet-me h4 {
 }
 body .main-content .meet-me p {
   font-size: 1.5rem;
+  margin: 2% 0%;
 }
 .but {
   height: 10vh;
