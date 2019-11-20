@@ -105,6 +105,10 @@
   transition: all 0.5s ease-in-out;
   border: 4px ridge white;
 }
+.footer {
+  position: fixed;
+  bottom: 0;
+}
 .con-hm {
   position: fixed;
   width: 100vw;

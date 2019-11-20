@@ -1,19 +1,20 @@
-body .main {
+.main {
   position: absolute;
   width: 100vw;
-  height: 100%;
+  height: 95vh;
   display: flex;
+  background: #e3c6d2;
   flex-wrap: wrap;
   justify-content: center;
   overflow: none;
 }
 @media (max-width: 500px) {
-  body .main {
+  .main {
     display: block;
     padding: 0px;
   }
 }
-body .main .container-h {
+.main .container-h {
   display: flex;
   width: 100vw;
   position: fixed;
@@ -27,20 +28,21 @@ body .main .container-h {
   box-shadow: 3px 3px 15px #000;
 }
 @media (max-width: 1000px) and (min-width: 500px) {
-  body .main .container-h {
+  .main .container-h {
     display: flex;
   }
 }
 @media (max-width: 500px) {
-  body .main .container-h {
+  .main .container-h {
     display: flex;
     flex-direction: column;
     height: 30vh;
     width: 100vw;
     background: none;
+    z-index: 25;
   }
 }
-body .main .container-h .h-button {
+.main .container-h .h-button {
   height: 10vh;
   border-radius: 1px;
   width: 10vw;
@@ -50,38 +52,39 @@ body .main .container-h .h-button {
   color: black;
   font-family: 'Judson', serif;
   font-size: 2.1rem;
+  box-shadow: 3px 9px 15px #000;
 }
 @media (max-width: 1000px) and (min-width: 500px) {
-  body .main .container-h .h-button {
+  .main .container-h .h-button {
     width: 24vw;
   }
 }
 @media (max-width: 500px) {
-  body .main .container-h .h-button {
+  .main .container-h .h-button {
     width: 90vw;
     height: 6vh;
     z-index: 10;
     margin-left: 10px;
   }
 }
-body .main .container-h .h-button > a {
+.main .container-h .h-button > a {
   color: black;
   font-family: 'Judson', serif;
   text-shadow: none;
 }
-body .main .container-h .button:hover {
+.main .container-h .button:hover {
   transition: all 0.45s ease-in-out;
   transform: scale(1.02);
   border: 2px ridge white;
   box-shadow: inset black 2px 2px 50px 2px;
   color: antiquewhite;
 }
-body .main .container-h .button:hover a:hover {
+.main .container-h .button:hover a:hover {
   transition: all 0.45s ease-in-out;
   transform: scale(1.02);
   color: antiquewhite;
 }
-body .main .main-content {
+.main .main-content {
   width: 80vw;
   height: 90%;
   display: flex;
@@ -92,21 +95,20 @@ body .main .main-content {
   align-self: center;
 }
 @media (max-width: 500px) {
-  body .main .main-content {
+  .main .main-content {
     position: relative;
     width: 100vw;
     display: block;
     padding: 5px;
     margin: 0;
-    margin-top: -35px;
+    margin-top: 5px;
     z-index: 0;
-    background: url('../images/logo.png');
     background-repeat: no-repeat;
     background-position: top 0px 5px;
     background-size: contain;
   }
 }
-body .main .main-content .line-1 {
+.main .main-content .line-1 {
   margin-top: 5vh;
   display: grid;
   position: relative;
@@ -116,17 +118,17 @@ body .main .main-content .line-1 {
   align-content: stretch;
   grid-gap: 10px;
   overflow-x: scroll;
-  background-size: 800px 400px;
   background: #768498;
+  padding-top: 10px;
 }
 @media (max-width: 1000px) and (min-width: 500px) {
-  body .main .main-content .line-1 {
+  .main .main-content .line-1 {
     overflow-x: scroll;
     margin-bottom: 15px;
   }
 }
 @media (max-width: 500px) {
-  body .main .main-content .line-1 {
+  .main .main-content .line-1 {
     width: 90vw;
     padding-top: 150px;
     display: block;
@@ -135,9 +137,9 @@ body .main .main-content .line-1 {
     position: absolute;
   }
 }
-body .main .main-content .line-1 .panels {
+.main .main-content .line-1 .panels {
   width: 15vw;
-  height: 25vh;
+  height: 22vh;
   margin: 15px;
   border-radius: 2px;
   border: 4px ridge #768498;
@@ -149,7 +151,7 @@ body .main .main-content .line-1 .panels {
   box-shadow: 3px -9px 15px #000;
 }
 @media (max-width: 1000px) and (min-width: 500px) {
-  body .main .main-content .line-1 .panels {
+  .main .main-content .line-1 .panels {
     height: 200px;
     width: 200px;
     margin: 10px 20px 40px 20px;
@@ -157,7 +159,7 @@ body .main .main-content .line-1 .panels {
   }
 }
 @media (max-width: 500px) {
-  body .main .main-content .line-1 .panels {
+  .main .main-content .line-1 .panels {
     display: block;
     width: 90vw;
     min-height: 50vh;
@@ -166,7 +168,7 @@ body .main .main-content .line-1 .panels {
     padding: 5px;
   }
 }
-body .main .main-content .line-1 .panels img {
+.main .main-content .line-1 .panels img {
   left: 0;
   position: relative;
   min-width: 10vw;
@@ -174,17 +176,17 @@ body .main .main-content .line-1 .panels img {
   margin: 5px 5px 0px 15px;
 }
 @media (max-width: 500px) {
-  body .main .main-content .line-1 .panels img {
+  .main .main-content .line-1 .panels img {
     width: 60%;
     margin: 50px;
     height: 70%;
   }
 }
-body .main .main-content .line-1 .panels .items {
+.main .main-content .line-1 .panels .items {
   max-width: 100%;
   max-height: 80%;
 }
-body .main .main-content .line-1 .panels .bid {
+.main .main-content .line-1 .panels .bid {
   display: flex;
   position: relative;
   width: 100%;
@@ -195,7 +197,7 @@ body .main .main-content .line-1 .panels .bid {
   justify-content: space-around;
   font-size: 1.9rem;
 }
-body .main .main-content .line-1 .panels .bid .amt {
+.main .main-content .line-1 .panels .bid .amt {
   font-family: 'Judson', serif;
   color: black;
   text-shadow: 0.15px 1px 0.1px whit;
@@ -204,46 +206,47 @@ body .main .main-content .line-1 .panels .bid .amt {
   margin: 3px 20px 3px 20px;
 }
 @media (max-width: 1000px) and (min-width: 500px) {
-  body .main .main-content .line-1 .panels .bid .amt {
+  .main .main-content .line-1 .panels .bid .amt {
     width: 80px;
     margin: 3px 10px 3px 10px;
   }
 }
 @media (max-width: 500px) {
-  body .main .main-content .line-1 .panels .bid .amt {
+  .main .main-content .line-1 .panels .bid .amt {
     width: 60vw;
     margin: 0;
   }
 }
-body .main .main-content .line-1 .panels .bid button {
+.main .main-content .line-1 .panels .bid button {
   padding: 0;
   margin: 0 0px;
   width: 5vw;
   font-family: 'Montserrat', sans-serif;
   color: black;
   font-size: 1.3rem;
+  box-shadow: 3px 9px 15px #000;
 }
 @media (max-width: 500px) {
-  body .main .main-content .line-1 .panels .bid button {
+  .main .main-content .line-1 .panels .bid button {
     width: 20vw;
     margin-right: 10px;
   }
 }
-body .main .main-content .line-1 .panels:hover {
+.main .main-content .line-1 .panels:hover {
   min-height: 22vh;
   transition: all 0.15s ease-in-out;
   border: 4px ridge white;
   box-shadow: #e3c6d2 0px 0px 20px 0px;
 }
 @media (max-width: 500px) {
-  body .main .main-content .line-1 .panels:hover {
+  .main .main-content .line-1 .panels:hover {
     width: 90vw;
     min-height: 50vh;
     max-height: 50vh;
     transform: scale(1.01);
   }
 }
-body .main .footer {
+.main .footer {
   position: fixed;
   height: 20vh;
   bottom: 0;
@@ -255,29 +258,38 @@ body .main .footer {
   border: 4px outset rgba(59, 78, 107, 0.5);
 }
 @media (max-width: 1000px) and (min-width: 500px) {
-  body .main .footer {
+  .main .footer {
     display: none;
   }
 }
-body .main .footer .adds {
+.main .footer .adds {
   display: flex;
   justify-content: space-around;
 }
-body .add-img {
+a.cr {
+  color: blue;
+  font-size: 1.9rem;
+}
+.add-img {
   margin-top: 5px;
   transition: all 0.15s ease-in-out;
   animation: pulse 2s infinite;
+  box-shadow: 3px 9px 15px #000;
 }
-body .add-img:hover {
+.add-img:hover {
   transform: scale(1.4);
 }
-body .add-img2 {
+.add-img2 {
   margin-top: 5px;
   transition: all 0.15s ease-in-out;
   animation: pulse2 2s infinite;
+  box-shadow: 3px 9px 15px #000;
 }
-body .add-img2:hover {
+.add-img2:hover {
   transform: scale(2.4);
+}
+.logo-img {
+  margin: 10%;
 }
 @keyframes pulse {
   0% {
@@ -312,7 +324,7 @@ body .add-img2:hover {
     transform: rotate(0deg);
   }
 }
-body .details {
+.details {
   display: none;
   position: absolute;
   background: white;
@@ -324,13 +336,13 @@ body .details {
   z-index: 100;
 }
 @media (max-width: 500px) {
-  body .details {
+  .details {
     position: fixed;
     left: 0;
     width: 100vw;
   }
 }
-body .details .items {
+.details .items {
   width: 100%;
   height: 100%;
 }
@@ -348,8 +360,7 @@ body .details .items {
 }
 @media (max-width: 500px) {
   #featured {
-    align-self: center;
-    margin-top: 200px;
+    display: none;
   }
 }
 ::-webkit-scrollbar-track {
@@ -474,4 +485,8 @@ body th {
   text-align: center;
   border: 5px solid rgba(0, 0, 0, 0.25);
   padding: 1.5rem;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
 }
