@@ -283,15 +283,13 @@ a {
 .footers {
   height: 20vh;
   width: 95vw;
-  height: 15vh;
+  height: 12vh;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  background: rgba(164, 173, 186, 0.78);
-  border: 4px outset rgba(59, 78, 107, 0.5);
   position: fixed;
   bottom: 0;
   font-size: 3rem;
-  left: 30%;
+  left: 15%;
 }
 .con-hm {
   position: fixed;
