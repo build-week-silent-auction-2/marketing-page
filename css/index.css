@@ -3,7 +3,7 @@
 .judson-serif {
   font-family: 'Judson', serif;
   color: black;
-  text-shadow: 0.15px 1px 0.1px whit;
+  text-shadow: 0.15px 1px 0.1px black;
 }
 .mon-serif {
   font-family: 'Montserrat', sans-serif;
@@ -155,7 +155,7 @@ body {
 }
 button {
   padding: 5px;
-  text-shadow: 0.15px 1px 0.1px whit;
+  text-shadow: 0.15px 1px 0.1px black;
   font-size: 1.3rem;
 }
 a {
@@ -283,6 +283,8 @@ a {
 .footer {
   position: fixed;
   bottom: 0;
+  font-size: 3rem;
+  left: 30%;
 }
 .con-hm {
   position: fixed;
@@ -297,6 +299,55 @@ a {
   z-index: 1;
   top: 0px;
   box-shadow: 3px 9px 15px #000;
+}
+.about-container {
+  position: absolute;
+  display: flex;
+  width: 600px;
+  bottom: 0;
+  font-size: 4rem;
+  left: 50%;
+}
+.about-container #about-con {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 15px;
+  height: 300px;
+  background: #e3c6d2;
+  border-radius: 15px;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 25vh;
+  margin-left: -50%;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  box-shadow: 3px 9px 15px #000;
+}
+.about-container .what {
+  padding: 5px;
+  margin: 5px auto 0 auto;
+  text-align: center;
+  font-size: 3.2rem;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  text-shadow: 0.15px 1px 0.1px black;
+}
+.about-container #about {
+  position: fixed;
+  bottom: 0;
+  font-size: 4rem;
+  left: 50%;
+  transition: all 0.5s ease-in-out;
+  font-family: 'Archivo Black', sans-serif;
+  color: #253956;
+  text-shadow: 0.15px 1px 0.1px black;
+}
+.about-container #about:hover {
+  transform: scale(1.04);
+  transition: all 0.5s ease-in-out;
+  box-shadow: 1px 1px 35px 1px white;
+  cursor: pointer;
 }
 * {
   box-sizing: border-box;
@@ -643,7 +694,7 @@ body.contact-bod .main-con .meet-me p {
 .main .main-content .line-1 .panels .bid .amt {
   font-family: 'Judson', serif;
   color: black;
-  text-shadow: 0.15px 1px 0.1px whit;
+  text-shadow: 0.15px 1px 0.1px black;
   width: 70%;
   font-size: 1.9rem;
   margin: 3px 20px 3px 20px;
@@ -891,7 +942,7 @@ body .divTable {
   top: 240px;
   font-family: 'Judson', serif;
   color: black;
-  text-shadow: 0.15px 1px 0.1px whit;
+  text-shadow: 0.15px 1px 0.1px black;
   font-size: 2.1rem;
   background: rgba(205, 205, 215, 0.7);
   margin-bottom: 50px;
