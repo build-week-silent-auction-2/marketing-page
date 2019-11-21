@@ -3,7 +3,7 @@
 .judson-serif {
   font-family: 'Judson', serif;
   color: black;
-  text-shadow: 0.15px 1px 0.1px whit;
+  text-shadow: 0.15px 1px 0.1px black;
 }
 .mon-serif {
   font-family: 'Montserrat', sans-serif;
@@ -211,7 +211,7 @@
 .main .main-content .line-1 .panels .bid .amt {
   font-family: 'Judson', serif;
   color: black;
-  text-shadow: 0.15px 1px 0.1px whit;
+  text-shadow: 0.15px 1px 0.1px black;
   width: 70%;
   font-size: 1.9rem;
   margin: 3px 20px 3px 20px;
