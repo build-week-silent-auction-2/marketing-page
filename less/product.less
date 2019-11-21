@@ -51,8 +51,9 @@
             width:10vw;
             padding:5px;
             transition:all .45s ease-in-out;
+            transform:scale(1);
             background:@btn-color;
-           color: black;
+          
            font-family: 'Judson', serif;
            font-size: @textSize-ll;
            box-shadow: 3px 9px 15px #000;
@@ -71,9 +72,10 @@
           
           }
           .h-button > a{
-              color:black;
-            font-family: 'Judson', serif;
-            text-shadow: none;
+            transition:all .45s ease-in-out;
+            font-size:2rem;
+            .archivo(@rgba-primary-2);
+            text-shadow: 1px 1px 1px blue, -1px -1px 1px @rgba-primary-0;
             
         }
 
@@ -215,6 +217,7 @@
                 bottom:0;
                 padding:.5% 0 .5% 0;
                 justify-content:space-around;
+                color:@rgba-complement-1;
                 font-size: 1.9rem;
 
                 .amt{
@@ -239,8 +242,11 @@
                     margin:0 0px;
                     width:5vw;
                     .mon-serif; 
+                    color:@rgba-complement-2;
                     font-size: @textSize-s;
+                    text-shadow: inset black 2px 2px 50px 2px;
                     box-shadow: 3px 9px 15px #000;
+
                     @media @phone{
                         width:20vw;
                         margin-right:10px;
