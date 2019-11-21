@@ -70,7 +70,7 @@
   font-size: 3rem;
   background-color: rgba(255, 255, 255, 0.45);
   align-items: center;
-  color: black;
+  color: #1e27ac;
   border: 1px solid black;
   transition: all 0.75s ease-in-out;
   box-shadow: 3px 9px 15px #000;
@@ -107,12 +107,11 @@
 }
 .footers {
   height: 20vh;
+  bottom: 0;
   width: 95vw;
   height: 12vh;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  margin-bottom: -25px;
   position: fixed;
-  bottom: 0;
   font-size: 3rem;
   left: 15%;
 }
@@ -131,47 +130,20 @@
   box-shadow: 3px 9px 15px #000;
 }
 .about-container {
-  position: absolute;
-  display: flex;
+  position: fixed;
   width: 600px;
   bottom: 0;
   font-size: 4rem;
   left: 50%;
 }
-.about-container #about-con {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  padding: 15px;
-  height: 300px;
-  background: #e3c6d2;
-  border-radius: 15px;
-  display: none;
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 25vh;
-  margin-left: -50%;
-  font-family: 'Montserrat', sans-serif;
-  color: black;
-  box-shadow: 3px 9px 15px #000;
-}
-.about-container .what {
-  padding: 5px;
-  margin: 5px auto 0 auto;
-  text-align: center;
-  font-size: 3.2rem;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.25);
-  text-shadow: 0.15px 1px 0.1px black;
-}
 .about-container #about {
   position: fixed;
-  bottom: 0;
   font-size: 4rem;
-  left: 50%;
+  left: 40%;
+  bottom: 50%;
+  color: #1e27ac;
   transition: all 0.5s ease-in-out;
-  font-family: 'Archivo Black', sans-serif;
-  color: #253956;
+  background: rgba(0, 0, 255, 0.025);
   text-shadow: 0.15px 1px 0.1px black;
 }
 .about-container #about:hover {
@@ -179,4 +151,42 @@
   transition: all 0.5s ease-in-out;
   box-shadow: 1px 1px 35px 1px white;
   cursor: pointer;
+}
+.about-container #about-con {
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 15px;
+  height: 300px;
+  background: rgba(87, 82, 84, 0.89);
+  border-radius: 15px;
+  display: none;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-left: -50%;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  box-shadow: 3px 9px 15px #000;
+}
+h3.what {
+  padding: 5px;
+  margin: 5px auto 0 auto;
+  text-align: center;
+  font-size: 3.2rem;
+  width: 100%;
+  color: #e3c6d2;
+  background: #253956;
+  text-shadow: 3px 3px 15px #000;
+}
+h3.what p {
+  line-height: 6rem;
+}
+.pclass {
+  font-family: 'Archivo', sans-serif;
+  text-shadow: 3px 3px 15px #000;
+  letter-spacing: 1.25px;
+  font-size: 2.55rem;
+  color: #e3c6d2;
+  line-height: 28px;
+  background: rgba(114, 100, 106, 0.68);
 }

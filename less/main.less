@@ -57,7 +57,7 @@
             font-size: 3rem;
             background-color: rgba(255, 255, 255, 0.45);
             align-items: center;
-            color:black;
+            color:@large-txt;
             border: 1px solid black;
             transition:all .75s ease-in-out;
             box-shadow: 3px 9px 15px #000;
@@ -97,15 +97,13 @@
 
 // }
 .footers{
+    position:fixed;
     height:20vh;
     bottom:0;
     width:95vw;
     height:12vh;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
- 
+    margin-bottom:-25px;
     position:fixed;
-    bottom:0;
     font-size:3rem;
     left:15%;
    
@@ -128,49 +126,24 @@
     box-shadow: 3px 9px 15px #000;
 }
 .about-container{
-    position:absolute;
-display:flex;
+    position:fixed;
+
 width:600px;
 bottom:0;
 font-size:4rem;
 left:50%;
 
-#about-con{
-    display:flex;
-    flex-wrap:wrap; 
-    width:100%;
-    padding:15px; 
-    // line-height: 3rem;
-    height:300px;
-    background:@rgba-complement-1;
-    border-radius:15px;
-    display:none;
-    font-size:2.5rem;
-    text-align:center;
-    margin-bottom:25vh;
-    margin-left:-50%;
-    .mon-serif;
-    box-shadow: 3px 9px 15px #000;
-}
-
-.what{
-    padding:5px;
-    margin:5px auto 0 auto;
-    text-align: center;
-    font-size:3.2rem;
-    width:100%;
-    background:rgba(0,0,0,.25);
-    text-shadow: @text-shadow;
-    
-}
 #about{
     position:fixed;
-    bottom:0;
     font-size:4rem;
-    left:50%;
+    left:40%; 
+    bottom:50%;
+    color:@large-txt;
     transition:all .5s ease-in-out;
-    .archivo(@rgba-primary-4);
+    background:rgba(0,0,255,.025);
     text-shadow: @text-shadow;
+
+   
 
     &:hover{
       transform:scale(1.04);
@@ -179,12 +152,51 @@ left:50%;
       cursor: pointer;
     }
 }
+
+#about-con{
+    flex-wrap:wrap; 
+    width:100%;
+    padding:15px; 
+    // line-height: 3rem;
+    height:300px;
+    background:@rgba-complement-2;
+    border-radius:15px;
+    display:none;
+    font-size:2.5rem;
+    text-align:center;
+    margin-bottom:25px;
+    margin-left:-50%;
+    .mon-serif;
+    box-shadow: 3px 9px 15px #000;
+ 
+
 }
 
 
 
+}
 
+h3.what{
+    padding:5px;
+    margin:5px auto 0 auto;
+    text-align: center;
+    font-size:3.2rem;
+    width:100%;
+    color:@rgba-complement-1;
+    background:@rgba-primary-4;
+    text-shadow: 3px 3px 15px #000;
+    
+    p{
+        line-height:6rem;
+    }
+}
 
-// #about-con{
-//     // display:block;
-// }
+.pclass{
+    font-family: 'Archivo', sans-serif;
+    text-shadow: 3px 3px 15px #000;
+    letter-spacing: 1.25px;
+    font-size:2.55rem;
+    color:@rgba-complement-1;
+    line-height: 28px;
+    background:@rgba-complement-4;
+}
