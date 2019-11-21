@@ -3,11 +3,22 @@ let item = $('.items');
 let amount = $('.amt');
 let det = $('.details');
 let imgArr = [];
+$('.main').on("scroll",function(event){
+    console.log("scrolling")
+    
+        $('#navbar').css("display", "none");
+    
+    })
 
+    let flag = false;
 amount.attr('value', '$0.00');
 
 
 item.on('click', function (e) {
+    if(flag===true){
+        $('.details').toggle();
+        flag = false;
+    }
     if ($('.details').has('img').length) {//check to see if there is an image displayed 
         $(".details img:last-child").remove();//if so then remove it first
     } else {
@@ -19,19 +30,21 @@ item.on('click', function (e) {
             let cl = th.clone(true);
             console.log("here " + " " + x)
             $('.details').append(cl);
+            flag = true;
         }
     }
 });
-
+event.stopPropagation();
 det.on('click', function (e) {//removes the large image 
-    e.preventDefault();
+    
+   
     $(".details img:last-child").remove();
     det.toggle('slow');
 })
 
 
-$('.item').hover(tooltip(e));
- function tooltip(e) {
+$('.item').hover(tooltip(event));
+ function tooltip(event) {
     $( ".items" ).tooltip({
       position: {
         my: "left top",
@@ -42,3 +55,6 @@ $('.item').hover(tooltip(e));
     });
   
   } ;
+
+
+
