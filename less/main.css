@@ -146,6 +146,13 @@
   background: rgba(0, 0, 255, 0.025);
   text-shadow: 0.15px 1px 0.1px black;
 }
+@media (max-width: 500px) {
+  .about-container #about {
+    position: absolute;
+    left: -15vw;
+    bottom: 65vh;
+  }
+}
 .about-container #about:hover {
   transform: scale(1.04);
   transition: all 0.5s ease-in-out;
@@ -189,4 +196,14 @@ h3.what p {
   color: #e3c6d2;
   line-height: 28px;
   background: rgba(114, 100, 106, 0.68);
+}
+@media (max-width: 500px) {
+  .pclass {
+    position: relative;
+    display: block;
+    font-size: 2.05rem;
+    width: 80vw;
+    left: 0;
+    margin: auto;
+  }
 }

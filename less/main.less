@@ -143,6 +143,12 @@ left:50%;
     background:rgba(0,0,255,.025);
     text-shadow: @text-shadow;
 
+    @media @phone{
+        position:absolute;
+        left:-15vw;
+        bottom:65vh;
+      
+    }
    
 
     &:hover{
@@ -186,6 +192,8 @@ h3.what{
     background:@rgba-primary-4;
     text-shadow: 3px 3px 15px #000;
     
+  
+
     p{
         line-height:6rem;
     }
@@ -199,4 +207,15 @@ h3.what{
     color:@rgba-complement-1;
     line-height: 28px;
     background:@rgba-complement-4;
+
+    @media @phone{
+        position:relative;
+        display:block;
+        font-size:2.05rem;
+        width:80vw;
+        left:0;
+        margin:auto;
+       
+        
+    }
 }
