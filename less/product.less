@@ -1,462 +1,507 @@
 @import "var";
 
 // body{
- 
+
 .main {
-    
+
     position: absolute;
     width: 100vw;
-    height:95vh;
+    height: 95vh;
     display: flex;
-   background:@rgba-complement-1;
-    flex-wrap:wrap;
-    justify-content:center;
-    overflow:none;
-    @media @phone{
-        display:block;
-        padding:0px
+    background: @rgba-complement-1;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: none;
+
+    @media @phone {
+        display: block;
+        padding: 0px
     }
 
     .container-h {
-        display:flex;
-        width:100vw;
-        position:fixed;
+        display: flex;
+        width: 100vw;
+        position: fixed;
         justify-content: space-around;
-        height:12vh;
-       padding:5px;
-       background:url('../images/logo.png');
-       background-size:cover;
-       background-position: center;
-       background-repeat: no-repeat;
-       box-shadow: 3px 3px 15px #000;
-       @media @tablet{
-           display:flex;
-           
-       }
-       @media @phone{
-           display:flex;
-           flex-direction: column;
-           height: 30vh;
-           width:100vw;
-           background:none;
-           z-index: 25;
-        //    margin-bottom:150px;
-    
-       }
+        height: 12vh;
+        padding: 5px;
+        background: url('../images/logo.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-shadow: 3px 3px 15px #000;
 
-       
-          .h-button{
-            height:10vh;
-            border-radius:1px;
-            width:10vw;
-            padding:5px;
-            transition:all .45s ease-in-out;
-            transform:scale(1);
-            background:@btn-color;
-          
-           font-family: 'Judson', serif;
-           font-size: @textSize-ll;
-           box-shadow: 3px 9px 15px #000;
+        @media @tablet {
+            display: flex;
 
-           @media @tablet{
-                width:24vw;
-           }
-
-            @media @phone{
-                width:90vw;
-                height:6vh;
-                z-index:10;
-                margin-left:10px;
-
-            }
-          
-          }
-          .h-button > a{
-            transition:all .45s ease-in-out;
-            font-size:2rem;
-            .archivo(@rgba-primary-2);
-            text-shadow: 1px 1px 1px blue, -1px -1px 1px @rgba-primary-0;
-            
         }
 
-        
-          .button:hover{
-            transition:all .45s ease-in-out;
-            transform:scale(1.02);
-            border:2px ridge white;
-            box-shadow: inset black 2px 2px 50px 2px;
-            color:antiquewhite;
+        @media @phone {
+            display: flex;
+            flex-direction: column;
+            height: 30vh;
+            width: 100vw;
+            background: none;
+            z-index: 25;
+            //    margin-bottom:150px;
 
-            a:hover{
-                transition:all .45s ease-in-out;
-                transform:scale(1.02);
-              
-                color:antiquewhite;
+        }
+
+
+        .h-button {
+            height: 10vh;
+            border-radius: 1px;
+            width: 10vw;
+            padding: 5px;
+            transition: all .45s ease-in-out .2s;
+            transform: scale(1);
+            background: @btn-color;
+            transform: scale(1);
+            font-family: 'Judson', serif;
+            font-size: @textSize-ll;
+            box-shadow: 3px 9px 15px #000;
+
+            &:hover {
+                transition: all .45s ease-in-out .2s;
+                transform: scale(1.02);
+                background: @rgba-complement-1;
+                box-shadow: inset @rgba-primary-1 2px 2px 50px 2px;
+                
             }
-          }
+
+
+            @media @tablet {
+                width: 24vw;
+            }
+
+            @media @phone {
+                width: 90vw;
+                height: 6vh;
+                z-index: 10;
+                margin-left: 10px;
+
+            }
+          
+
+        }
+
+
+        a {
+            transition: all .45s ease-in-out .2s;
+            font-size: 2rem;
+            .archivo(@rgba-primary-2);
+            text-shadow: 1px 1px 1px blue, -1px -1px 1px @rgba-primary-0;
+
+            a:hover {
+                transition: all .45s ease-in-out .2s;
+                transform: scale(1.02);
+
+                color: antiquewhite;
+            }
+
+        }
+
          
         
-    }//closes out the header button section
+
+
+    }
+
+    //closes out the header button section
 
 
     .main-content {
- 
+
         width: 80vw;
-        height:90%;
+        height: 90%;
         display: flex;
         flex-direction: column;
-        margin-top:7%;
+        margin-top: 7%;
         justify-content: flex-start;
-        background-size:contain;
-        align-self:center;
+        background-size: contain;
+        align-self: center;
 
-        @media @phone{
-            position:relative;
-            width:100vw;
-            display:block;
-            padding:5px;
-            margin:0;
-            margin-top:5px;
+        @media @phone {
+            position: relative;
+            width: 100vw;
+            display: block;
+            padding: 5px;
+            margin: 0;
+            margin-top: 5px;
             z-index: 0;
-        //    background:url('../images/logo.png');
-           background-repeat:no-repeat; 
-           background-position:top 0px 5px; 
-           background-size:contain; 
-       
-                
+            //    background:url('../images/logo.png');
+            background-repeat: no-repeat;
+            background-position: top 0px 5px;
+            background-size: contain;
+
+
         }
-        .line-1{
-            margin-top:5vh;
+
+        .line-1 {
+            margin-top: 5vh;
             display: grid;
             position: relative;
-            box-shadow:outset 3px 2px 2px 2px black, -3px -2px 2px -2px @rgba-primary-3;
-            grid-template-columns:repeat(12,1fr);
+            box-shadow: outset 3px 2px 2px 2px black, -3px -2px 2px -2px @rgba-primary-3;
+            grid-template-columns: repeat(12, 1fr);
             grid-template-rows: 1fr 1fr;
             align-content: stretch;
-            grid-gap:10px;
-            overflow-x:scroll;
+            grid-gap: 10px;
+            overflow-x: scroll;
             // background-size:800px 400px;
-            background:@rgba-primary-2;
-            padding-top:10px;
+            background: @rgba-primary-2;
+            padding-top: 10px;
 
-            @media @tablet{
-                margin-top:70px;
-                overflow-x:scroll;
-                margin-bottom:15px;
-                grid-template-columns:repeat(24,1fr); 
-                grid-template-rows: 1fr ;
+            @media @tablet {
+                margin-top: 70px;
+                overflow-x: scroll;
+                margin-bottom: 15px;
+                grid-template-columns: repeat(24, 1fr);
+                grid-template-rows: 1fr;
             }
-            @media @phone{
-                width:90vw;
-                padding-top:150px;
-                display:block;
-                overflow:hidden;
+
+            @media @phone {
+                width: 90vw;
+                padding-top: 150px;
+                display: block;
+                overflow: hidden;
                 // flex-direction:column;
                 // justify-content:space-around;
-                background:transparent;
-                position:absolute;
+                background: transparent;
+                position: absolute;
 
-              
+
             }
-           
-        .panels {
-           width:15vw;
-            height:22vh;
-            margin:15px;
-            border-radius:2px;
-            border:4px ridge @rgba-primary-2;
-            padding:5px;
-            background:@panel-color;
-            transition:all .35s ease-in-out;
-            background-size:cover;
-            background-repeat:no-repeat;
-            box-shadow: 3px -9px 15px #000;
 
-            @media @tablet{
-              
-                height:200px;
-                width:200px;
-                margin:10px 20px 40px 20px;
-                padding:2px;
+            .panels {
+                width: 15vw;
+                height: 22vh;
+                margin: 15px;
+                border-radius: 2px;
+                border: 4px ridge @rgba-primary-2;
+                padding: 5px;
+                background: @panel-color;
+                transition: all .35s ease-in-out;
+                background-size: cover;
+                background-repeat: no-repeat;
+                box-shadow: 3px -9px 15px #000;
 
-            } 
+                @media @tablet {
 
-            @media @phone{
-                display:block;
-                width:90vw;
-                min-height:50vh;
-                max-height:50vh;
-                margin:10px 20px 40px 20px;
-                padding:5px;
-            } //closes media query for panels class
+                    height: 200px;
+                    width: 200px;
+                    margin: 10px 20px 40px 20px;
+                    padding: 2px;
 
-            img{
-                left:0;
-                position:relative;
-                min-width:10vw;
-                min-height:13vh; 
-                margin:5px 5px 0px 15px;
+                }
 
-            
-                @media @phone{
-                    width:60%;
-                    margin:50px;
-                    // min-height:40vh;
-                    height:70%;
-                    // max-height:80%;
-                }  // closes media query for img
-            } //closes img
-            .items{
-                max-width:100%;
-                max-height:80%;
-            }  //close for items class
+                @media @phone {
+                    display: block;
+                    width: 90vw;
+                    min-height: 50vh;
+                    max-height: 50vh;
+                    margin: 10px 20px 40px 20px;
+                    padding: 5px;
+                }
 
-           .bid{
-               display:flex;
-                position:relative;
-                width:100%;
-                height:5vh;
-                background:@rgba-complement-4;
-                bottom:0;
-                padding:.5% 0 .5% 0;
-                justify-content:space-around;
-                color:@rgba-complement-1;
-                font-size: 1.9rem;
+                //closes media query for panels class
 
-                .amt{
-                    .judson-serif; 
-                    width:70%;
-                    font-size: @textSize-l;
-                    margin:3px 20px 3px 20px;
+                img {
+                    left: 0;
+                    position: relative;
+                    min-width: 10vw;
+                    min-height: 13vh;
+                    margin: 5px 5px 0px 15px;
 
-                    @media @tablet{
-                        width:80px;
-                        margin:3px 10px 3px 10px;
+
+                    @media @phone {
+                        width: 60%;
+                        margin: 50px;
+                        // min-height:40vh;
+                        height: 70%;
+                        // max-height:80%;
                     }
 
-                    @media @phone{
-                        width:60vw;
-                        margin:0;
-                    }
-                } 
+                    // closes media query for img
+                }
 
-                button{
-                    padding:0;
-                    margin:0 0px;
-                    width:5vw;
-                    .mon-serif; 
-                    color:@rgba-complement-2;
-                    font-size: @textSize-s;
-                    text-shadow: inset black 2px 2px 50px 2px;
-                    box-shadow: 3px 9px 15px #000;
+                //closes img
+                .items {
+                    max-width: 100%;
+                    max-height: 80%;
+                }
 
-                    @media @phone{
-                        width:20vw;
-                        margin-right:10px;
+                //close for items class
+
+                .bid {
+                    display: flex;
+                    position: relative;
+                    width: 100%;
+                    height: 5vh;
+                    background: @rgba-complement-4;
+                    bottom: 0;
+                    padding: .5% 0 .5% 0;
+                    justify-content: space-around;
+                    color: @rgba-complement-1;
+                    font-size: 1.9rem;
+
+                    .amt {
+                        .judson-serif;
+                        width: 70%;
+                        font-size: @textSize-l;
+                        margin: 3px 20px 3px 20px;
+
+                        @media @tablet {
+                            width: 80px;
+                            margin: 3px 10px 3px 10px;
+                        }
+
+                        @media @phone {
+                            width: 60vw;
+                            margin: 0;
+                        }
                     }
-                }//closes button tag 
-            }//closes bid panel on the input
-        }// closes panels class 
-        .panels:hover{
-            min-height:22vh;
-            transition:all .15s ease-in-out;
-            
-            border:4px ridge white;
-            box-shadow:@rgba-complement-1 0px 0px 20px 0px;
-            @media @phone{
-                width:90vw;
-                min-height:50vh;
-                max-height:50vh;
-               
-                transform:scale(1.01);
-            } // closes media query for the panel:hover
-        }//closes panel hover 
-     
-    }// closes line-1 class images sit within this div
-   
-        
-    }// this closes main-content class this is what boxes in the bid items 
+
+                    button {
+                        padding: 0;
+                        margin: 0 0px;
+                        width: 5vw;
+                        .mon-serif;
+                        color: @rgba-complement-2;
+                        font-size: @textSize-s;
+                        text-shadow: inset black 2px 2px 50px 2px;
+                        box-shadow: 3px 9px 15px #000;
+
+                        @media @phone {
+                            width: 20vw;
+                            margin-right: 10px;
+                        }
+                    }
+
+                    //closes button tag 
+                }
+
+                //closes bid panel on the input
+            }
+
+            // closes panels class 
+            .panels:hover {
+                min-height: 22vh;
+                transition: all .15s ease-in-out;
+
+                border: 4px ridge white;
+                box-shadow: @rgba-complement-1 0px 0px 20px 0px;
+
+                @media @phone {
+                    width: 90vw;
+                    min-height: 50vh;
+                    max-height: 50vh;
+
+                    transform: scale(1.01);
+                }
+
+                // closes media query for the panel:hover
+            }
+
+            //closes panel hover 
+
+        }
+
+        // closes line-1 class images sit within this div
+
+
+    }
+
+    // this closes main-content class this is what boxes in the bid items 
 
     .footer {
-        position:fixed;
-        height:20vh;
-        bottom:0;
-        width:95vw;
-        height:15vh;
+        position: fixed;
+        height: 20vh;
+        bottom: 0;
+        width: 95vw;
+        height: 15vh;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
-        background:@rgba-primary-1;
-        border:4px outset @rgba-primary-3;
+        background: @rgba-primary-1;
+        border: 4px outset @rgba-primary-3;
 
-        @media @tablet{
+        @media @tablet {
             // display:none;
         }
-        .adds{
-            display:flex;
-            justify-content:space-around;
 
-          
+        .adds {
+            display: flex;
+            justify-content: space-around;
+
+
 
         }
 
 
     }
 }
-a.cr{
-    color:blue;
-    font-size:@textSize-l;
+
+a.cr {
+    color: blue;
+    font-size: @textSize-l;
 }
-.add-img{
-    margin-top:5px;
-    transition:all .15s ease-in-out;
-    animation:pulse 2s infinite;
+
+.add-img {
+    margin-top: 5px;
+    transition: all .15s ease-in-out;
+    animation: pulse 2s infinite;
     box-shadow: 3px 9px 15px #000;
-    
-    @media @phone{
-        width:50px;
-        height:50px;
+
+    @media @phone {
+        width: 50px;
+        height: 50px;
     }
 
-    &:hover{
-        transform:scale(1.4);
+    &:hover {
+        transform: scale(1.4);
     }
 }
 
-.add-img2{
-    margin-top:5px;
-    transition:all .15s ease-in-out;
-    animation:pulse2 2s infinite;
+.add-img2 {
+    margin-top: 5px;
+    transition: all .15s ease-in-out;
+    animation: pulse2 2s infinite;
     box-shadow: 3px 9px 15px #000;
-    
-    @media @phone{
-        width:50px;
-        height:50px;
+
+    @media @phone {
+        width: 50px;
+        height: 50px;
     }
 
-    &:hover{
-        transform:scale(2.4); 
+    &:hover {
+        transform: scale(2.4);
     }
 }
 
-.logo-img{
-    margin:5%;
+.logo-img {
+    margin: 5%;
 
 }
 
-.logo{
-    @media @phone{
+.logo {
+    @media @phone {
         position: relative;
-        display:block;
-        width:120px;
-        flex-wrap:wrap;
-      
+        display: block;
+        width: 120px;
+        flex-wrap: wrap;
+
         text-align: center;
     }
 }
 
 @keyframes pulse {
     0% {
-        border:4px dashed yellow;
+        border: 4px dashed yellow;
     }
+
     50% {
-        border:2px dashed black;
+        border: 2px dashed black;
     }
 
     100% {
-        border:2px dashed red;
+        border: 2px dashed red;
     }
-  }
-
-  @keyframes pulse2 {
-    0% {
-        border:2px dashed black;
-        transform:rotate(0deg)
-    }
-
-    20%{
-        transform:rotate(20deg)
-    }
-    40% {
-       
-        border:4px dashed yellow;
-    }
-
-    60%{
-        transform:rotate(0deg)
-    }
-
-    80%{
-        transform:rotate(-20deg)
-    }
-
-    100% {
-        border:2px dashed red;
-        transform:rotate(0deg)
-    }
-  }
-
-.details{
-    display:none;
-    position:absolute;
-    background:white;
-    border:5px ridge black;
-    width:60vw;
-    height:80vh;
-    left:35%;
-    top:10%;
-    z-index:100;
-@media @phone{
-    position:fixed;
-    left:0;
-    width:100vw;
 }
-    .items{
-        width:100%;
-        height:100%;
+
+@keyframes pulse2 {
+    0% {
+        border: 2px dashed black;
+        transform: rotate(0deg)
     }
-}//this closes the hidden class for when an image gets clicked 
+
+    20% {
+        transform: rotate(20deg)
+    }
+
+    40% {
+
+        border: 4px dashed yellow;
+    }
+
+    60% {
+        transform: rotate(0deg)
+    }
+
+    80% {
+        transform: rotate(-20deg)
+    }
+
+    100% {
+        border: 2px dashed red;
+        transform: rotate(0deg)
+    }
+}
+
+.details {
+    display: none;
+    position: absolute;
+    background: white;
+    border: 5px ridge black;
+    width: 60vw;
+    height: 80vh;
+    left: 35%;
+    top: 10%;
+    z-index: 100;
+
+    @media @phone {
+        position: fixed;
+        left: 0;
+        width: 100vw;
+    }
+
+    .items {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+//this closes the hidden class for when an image gets clicked 
 
 // }//this closes main 
 
 
 
 //featured Items change 
-#featured{
-    position:fixed;
-    margin-top:12vh;
-    width:50vw;
-    min-width:50vw;
+#featured {
+    position: fixed;
+    margin-top: 12vh;
+    width: 50vw;
+    min-width: 50vw;
     text-align: center;
-    padding:10px;
-    background:transparent;
-    font-size:@textSize-xl;
+    padding: 10px;
+    background: transparent;
+    font-size: @textSize-xl;
     .mon-serif;
-   @media @phone{
-     display:none;
-   }
+
+    @media @phone {
+        display: none;
+    }
 }
+
 ////////////////////////////////////
 ////////Below is custimizing Scroll bar////////////////
 ::-webkit-scrollbar-track {
-	border-radius: 10px;
-	background-color: @rgba-complement-1;
+    border-radius: 10px;
+    background-color: @rgba-complement-1;
 }
 
 ::-webkit-scrollbar {
-	height: 20px;
-} 
+    height: 20px;
+}
+
 ::-webkit-scrollbar-thumb {
-	border:7px ridge @rgba-primary-2;
-	width:25px;
-	border-radius: 10px;	
+    border: 7px ridge @rgba-primary-2;
+    width: 25px;
+    border-radius: 10px;
 }
-::-webkit-scrollbar-track-piece{
-	background: @rgba-complement-4;
-	padding:10px;
+
+::-webkit-scrollbar-track-piece {
+    background: @rgba-complement-4;
+    padding: 10px;
 }
+
 //////////////////////////////////////////////////
-
-
-
-
-

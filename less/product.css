@@ -58,12 +58,18 @@
   border-radius: 1px;
   width: 10vw;
   padding: 5px;
-  transition: all 0.45s ease-in-out;
-  transform: scale(1);
+  transition: all 0.45s ease-in-out 0.2s;
   background: rgba(87, 82, 84, 0.89);
+  transform: scale(1);
   font-family: 'Judson', serif;
   font-size: 2.1rem;
   box-shadow: 3px 9px 15px #000;
+}
+.main .container-h .h-button:hover {
+  transition: all 0.45s ease-in-out 0.2s;
+  transform: scale(1.02);
+  background: #e3c6d2;
+  box-shadow: inset rgba(164, 173, 186, 0.78) 2px 2px 50px 2px;
 }
 @media (max-width: 1000px) and (min-width: 500px) {
   .main .container-h .h-button {
@@ -78,22 +84,15 @@
     margin-left: 10px;
   }
 }
-.main .container-h .h-button > a {
-  transition: all 0.45s ease-in-out;
+.main .container-h a {
+  transition: all 0.45s ease-in-out 0.2s;
   font-size: 2rem;
   font-family: 'Archivo Black', sans-serif;
   color: #768498;
   text-shadow: 1px 1px 1px blue, -1px -1px 1px #54667f;
 }
-.main .container-h .button:hover {
-  transition: all 0.45s ease-in-out;
-  transform: scale(1.02);
-  border: 2px ridge white;
-  box-shadow: inset black 2px 2px 50px 2px;
-  color: antiquewhite;
-}
-.main .container-h .button:hover a:hover {
-  transition: all 0.45s ease-in-out;
+.main .container-h a a:hover {
+  transition: all 0.45s ease-in-out 0.2s;
   transform: scale(1.02);
   color: antiquewhite;
 }
@@ -140,7 +139,7 @@
     overflow-x: scroll;
     margin-bottom: 15px;
     grid-template-columns: repeat(24, 1fr);
-    grid-template-rows: 1fr ;
+    grid-template-rows: 1fr;
   }
 }
 @media (max-width: 500px) {
