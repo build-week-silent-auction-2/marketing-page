@@ -126,7 +126,7 @@
   display: grid;
   position: relative;
   box-shadow: outset 3px 2px 2px 2px black, -3px -2px 2px -2px rgba(59, 78, 107, 0.5);
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1fr 1fr;
   align-content: stretch;
   grid-gap: 10px;
@@ -136,8 +136,11 @@
 }
 @media (max-width: 1000px) and (min-width: 500px) {
   .main .main-content .line-1 {
+    margin-top: 70px;
     overflow-x: scroll;
     margin-bottom: 15px;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: 1fr ;
   }
 }
 @media (max-width: 500px) {
@@ -274,9 +277,6 @@
   border: 4px outset rgba(59, 78, 107, 0.5);
 }
 @media (max-width: 1000px) and (min-width: 500px) {
-  .main .footer {
-    display: none;
-  }
 }
 .main .footer .adds {
   display: flex;
@@ -292,6 +292,12 @@ a.cr {
   animation: pulse 2s infinite;
   box-shadow: 3px 9px 15px #000;
 }
+@media (max-width: 500px) {
+  .add-img {
+    width: 50px;
+    height: 50px;
+  }
+}
 .add-img:hover {
   transform: scale(1.4);
 }
@@ -301,11 +307,26 @@ a.cr {
   animation: pulse2 2s infinite;
   box-shadow: 3px 9px 15px #000;
 }
+@media (max-width: 500px) {
+  .add-img2 {
+    width: 50px;
+    height: 50px;
+  }
+}
 .add-img2:hover {
   transform: scale(2.4);
 }
 .logo-img {
-  margin: 10%;
+  margin: 5%;
+}
+@media (max-width: 500px) {
+  .logo {
+    position: relative;
+    display: block;
+    width: 120px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
 }
 @keyframes pulse {
   0% {

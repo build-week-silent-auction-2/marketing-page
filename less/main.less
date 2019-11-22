@@ -136,12 +136,19 @@ left:50%;
 #about{
     position:fixed;
     font-size:4rem;
-    left:40%; 
-    bottom:50%;
+    left:45%; 
+    bottom:35%;
     color:@large-txt;
     transition:all .5s ease-in-out;
     background:rgba(0,0,255,.025);
     text-shadow: @text-shadow;
+
+    @media @tablet{
+        position:absolute;
+        left:-15vw;
+        bottom:65vh;
+      
+    }
 
     @media @phone{
         position:absolute;
@@ -154,7 +161,7 @@ left:50%;
     &:hover{
       transform:scale(1.04);
       transition:all .5s ease-in-out;
-      box-shadow:1px 1px 35px 1px white;
+      
       cursor: pointer;
     }
 }

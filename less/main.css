@@ -139,12 +139,19 @@
 .about-container #about {
   position: fixed;
   font-size: 4rem;
-  left: 40%;
-  bottom: 50%;
+  left: 45%;
+  bottom: 35%;
   color: #1e27ac;
   transition: all 0.5s ease-in-out;
   background: rgba(0, 0, 255, 0.025);
   text-shadow: 0.15px 1px 0.1px black;
+}
+@media (max-width: 1000px) and (min-width: 500px) {
+  .about-container #about {
+    position: absolute;
+    left: -15vw;
+    bottom: 65vh;
+  }
 }
 @media (max-width: 500px) {
   .about-container #about {
@@ -156,7 +163,6 @@
 .about-container #about:hover {
   transform: scale(1.04);
   transition: all 0.5s ease-in-out;
-  box-shadow: 1px 1px 35px 1px white;
   cursor: pointer;
 }
 .about-container #about-con {
