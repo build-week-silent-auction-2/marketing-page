@@ -370,7 +370,6 @@ a {
   .about-container #about-con {
     padding: 10px;
     width: 90vw;
-    display: flex;
     margin-left: -40%;
   }
 }
