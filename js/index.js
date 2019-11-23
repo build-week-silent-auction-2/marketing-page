@@ -1,4 +1,3 @@
-
-$('#about').on('click',function(){
+$('#about').on('click', function () {
     $('#about-con').toggle();
 })

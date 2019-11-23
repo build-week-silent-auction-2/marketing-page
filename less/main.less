@@ -1,55 +1,61 @@
 @import "var";
 
-*{
-    box-sizing: border-box;
-}
 
 
-.container{
+
+.container {
     position: absolute;
-    top:12vh;
-    margin-top:0;
+    overflow-y: none;
+    top: 0;
+    margin-top: 0;
     width: 100vw;
-    height:100%;
+    height: 100%;
     display: flex;
-    flex-wrap:wrap;
-    justify-content:center;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     // background-color: @bg;
     background-image: url("https://cdn.discordapp.com/attachments/644333219512188928/644357514607067156/auction-image.png");
-   z-index: 0;
-  
-    h1{
+    z-index: 0;
+
+    h1 {
         display: flex;
         font-size: 9rem;
-        margin-bottom:8vh;
+        margin-bottom: 8vh;
         justify-content: center;
+        margin-top: 10vh;
         padding-bottom: 10vh;
         font-weight: bold;
         text-shadow: 3px 3px 15px #000;
         color: @large-txt;
-        @media @tablet{
+
+        @media @tablet {
             font-size: 6rem;
         }
-        @media @phone{
-            font-size: 5rem;
+
+        @media @phone {
+            font-size: 3rem;
         }
-    }//end of h1
-    nav{
+    }
+
+    //end of h1
+    nav {
         display: flex;
-        @media @tablet{
-            display:block;
-            padding:10px;
+
+        @media @tablet {
+            display: block;
+            padding: 10px;
         }
-        @media @phone{
+
+        @media @phone {
             flex-direction: column;
-            
+
         }
-        
+
         a {
             display: flex;
             margin: 2%;
-            margin-bottom:8vh;
+            margin-bottom: 8vh;
             width: 22vw;
             height: 20vh;
             text-decoration: none;
@@ -57,10 +63,11 @@
             font-size: 3rem;
             background-color: rgba(255, 255, 255, 0.45);
             align-items: center;
-            color:@large-txt;
+            color: @large-txt;
             border: 1px solid black;
-            transition:all .75s ease-in-out;
+            transition: all .75s ease-in-out;
             box-shadow: 3px 9px 15px #000;
+
             // opacity: .65;
             @media @tablet {
                 flex-direction: column;
@@ -70,50 +77,70 @@
                 justify-content: center;
                 margin: 2.5%;
                 font-size: 2rem;
-                
+
             }
-            @media @tablet{
-                margin:auto 25px auto 10px;
+
+            @media @tablet {
+            
+                margin: auto 25px 0 10px;
             }
+
             @media @phone {
                 font-size: 3rem;
                 width: 95vw;
-                
+                margin:0;
+
             }
 
             &:hover {
-                background-color: rgba(0,0,0,.75);
+                background-color: rgba(0, 0, 0, .75);
                 color: whitesmoke;
                 opacity: 1;
-                transform:scale(1.09);
-                transition:all .5s ease-in-out;
-                border:4px ridge white;
-            }//end of hover
-        } //end of button
-    }// end of nav
-}//end of container
+                transform: scale(1.09);
+                transition: all .5s ease-in-out;
+                border: 4px ridge white;
+            }
+
+            //end of hover
+        }
+
+        //end of button
+    }
+
+    // end of nav
+}
+
+//end of container
 
 // img {
 
 // }
-.footers{
-    position:fixed;
-    height:20vh;
-    bottom:0;
-    width:95vw;
-    height:12vh;
-    margin-bottom:-25px;
-    position:fixed;
-    font-size:3rem;
-    left:15%;
-   
+.footers {
+    position: absolute;
+    bottom: 0;
+    width: 95vw;
+    height: 12vh;
+    margin-bottom: -25px;
+    font-size: 3rem;
+    left: 15%;
+    display:flex;
+
+    @media @tablet {
+        position: absolute;
+        left: 5vw;
+        bottom: -25vh;
+    }
+    p{
+        margin-top:30px;
+    }
+
 }
 
 
 .con-hm {
-    position:fixed;
+    position: absolute;
     width: 100vw;
-    
+
     justify-content: space-around;
     height: 12vh;
     padding: 0px;
@@ -122,107 +149,114 @@
     background-position: center;
     background-repeat: no-repeat;
     z-index: 1;
-    top:0px;
+    top: 0;
     box-shadow: 3px 9px 15px #000;
 }
-.about-container{
-    position:fixed;
 
-width:600px;
-bottom:0;
-font-size:4rem;
-left:50%;
+.about-container {
+    position: absolute;
+    width: 600px;
+    bottom: -5vh;
+    font-size: 4rem;
+    left: 50%;
 
-#about{
-    position:fixed;
-    font-size:4rem;
-    left:45%; 
-    bottom:35%;
-    color:@large-txt;
-    transition:all .5s ease-in-out;
-    background:rgba(0,0,255,.025);
-    text-shadow: @text-shadow;
+    #about {
+        position: absolute;
+        font-size: 4rem;
+        left: 45%;
+        bottom: 5vh;
+        color: @large-txt;
+        transition: all .5s ease-in-out;
+        background: rgba(0, 0, 255, .025);
+        text-shadow: @text-shadow;
 
-    @media @tablet{
-        position:absolute;
-        left:-15vw;
-        bottom:65vh;
-      
+
+        @media @tablet {
+            position: absolute;
+            left: -12vw;
+            bottom: -25vh;
+
+        }
+
+        @media @phone {
+            position: absolute;
+            left: -12vw;
+            bottom: -25vh;
+
+        }
+
+
+        &:hover {
+            transform: scale(1.04);
+            transition: all .5s ease-in-out;
+
+            cursor: pointer;
+        }
     }
 
-    @media @phone{
-        position:absolute;
-        left:-15vw;
-        bottom:65vh;
-      
+    #about-con {
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 15px;
+        height: 300px;
+        background: @rgba-complement-2;
+        border-radius: 15px;
+        display: none;
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 25px;
+        margin-left: -50%;
+        .mon-serif;
+        box-shadow: 3px 9px 15px #000;
+        
+        @media @mobile{
+           padding:10px;
+           width:90vw;
+        
+           margin-left:-40%;
+        }
+
     }
-   
-
-    &:hover{
-      transform:scale(1.04);
-      transition:all .5s ease-in-out;
-      
-      cursor: pointer;
-    }
-}
-
-#about-con{
-    flex-wrap:wrap; 
-    width:100%;
-    padding:15px; 
-    // line-height: 3rem;
-    height:300px;
-    background:@rgba-complement-2;
-    border-radius:15px;
-    display:none;
-    font-size:2.5rem;
-    text-align:center;
-    margin-bottom:25px;
-    margin-left:-50%;
-    .mon-serif;
-    box-shadow: 3px 9px 15px #000;
- 
-
-}
 
 
 
 }
 
-h3.what{
-    padding:5px;
-    margin:5px auto 0 auto;
+h3.what {
+    padding: 5px;
+    margin: 5px auto 0 auto;
     text-align: center;
-    font-size:3.2rem;
-    width:100%;
-    color:@rgba-complement-1;
-    background:@rgba-primary-4;
+    font-size: 3.2rem;
+    width: 100%;
+    color: @rgba-complement-1;
+    background: @rgba-primary-4;
     text-shadow: 3px 3px 15px #000;
-    
-  
 
-    p{
-        line-height:6rem;
+
+
+    p {
+        line-height: 6rem;
     }
 }
 
-.pclass{
+.pclass {
     font-family: 'Archivo', sans-serif;
     text-shadow: 3px 3px 15px #000;
     letter-spacing: 1.25px;
-    font-size:2.55rem;
-    color:@rgba-complement-1;
+    font-size: 2.55rem;
+    color: @rgba-complement-1;
     line-height: 28px;
-    background:@rgba-complement-4;
+    background: @rgba-complement-4;
 
-    @media @phone{
-        position:relative;
-        display:block;
-        font-size:2.05rem;
-        width:80vw;
-        left:0;
-        margin:auto;
-       
+    @media @phone {
+        position: relative;
+        display: block;
+        width:85vw;
+        font-size: 1.5rem;
+        width: 80vw;
+        padding:5px;
         
+
+
     }
 }

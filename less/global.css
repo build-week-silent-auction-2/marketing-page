@@ -3,7 +3,7 @@
 .judson-serif {
   font-family: 'Judson', serif;
   color: black;
-  text-shadow: 0.15px 1px 0.1px whit;
+  text-shadow: 0.15px 1px 0.1px black;
 }
 .mon-serif {
   font-family: 'Montserrat', sans-serif;
@@ -21,7 +21,7 @@ body {
 }
 button {
   padding: 5px;
-  text-shadow: 0.15px 1px 0.1px whit;
+  text-shadow: 0.15px 1px 0.1px black;
   font-size: 1.3rem;
 }
 a {
