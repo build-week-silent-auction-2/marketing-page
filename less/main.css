@@ -41,7 +41,7 @@
 }
 @media (max-width: 500px) {
   .container h1 {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 }
 .container nav {
@@ -87,13 +87,14 @@
 }
 @media (max-width: 1000px) and (min-width: 500px) {
   .container nav a {
-    margin: auto 25px auto 10px;
+    margin: auto 25px 0 10px;
   }
 }
 @media (max-width: 500px) {
   .container nav a {
     font-size: 3rem;
     width: 95vw;
+    margin: 0;
   }
 }
 .container nav a:hover {
@@ -106,13 +107,13 @@
 }
 .footers {
   position: absolute;
-  height: 20vh;
   bottom: 0;
   width: 95vw;
   height: 12vh;
   margin-bottom: -25px;
   font-size: 3rem;
   left: 15%;
+  display: flex;
 }
 @media (max-width: 1000px) and (min-width: 500px) {
   .footers {
@@ -120,6 +121,9 @@
     left: 5vw;
     bottom: -25vh;
   }
+}
+.footers p {
+  margin-top: 30px;
 }
 .con-hm {
   position: absolute;
@@ -155,15 +159,15 @@
 @media (max-width: 1000px) and (min-width: 500px) {
   .about-container #about {
     position: absolute;
-    left: -15vw;
+    left: -12vw;
     bottom: -25vh;
   }
 }
 @media (max-width: 500px) {
   .about-container #about {
     position: absolute;
-    left: 5vw;
-    z-index: 0;
+    left: -12vw;
+    bottom: -25vh;
   }
 }
 .about-container #about:hover {
